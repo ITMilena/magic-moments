@@ -102,7 +102,7 @@ export default function Home() {
             </a>
 
             <a
-              href="#kontakt"
+              href="/kontakt"
               className="text-[13px] font-semibold uppercase tracking-[0.04em] text-[#4a4a4a] transition hover:text-[#b88a2c]"
             >
               Kontakt
@@ -216,7 +216,7 @@ export default function Home() {
               </a>
 
               <a
-                href="#kontakt"
+                href="/kontakt"
                 className="border-t border-[#f3eee3] px-3 py-3 text-sm font-semibold uppercase text-[#444]"
                 onClick={() => setMobileOpen(false)}
               >
@@ -246,7 +246,7 @@ export default function Home() {
           </p>
 
           <a
-            href="#kontakt"
+            href="/kontakt"
             className="inline-block bg-[#d8c0c6] px-8 py-4 text-sm font-semibold uppercase tracking-[0.10em] text-white transition hover:bg-[#cdaeb7]"
           >
             Kontaktirajte nas
