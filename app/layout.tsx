@@ -52,29 +52,37 @@ export default function RootLayout({
 
         {/* FOOTER */}
         <footer className="border-t border-[#e8ddd2] bg-white/80 py-8 text-center text-sm text-[#6f5a57]">
-          <div className="space-y-2">
+          <footer className="border-t border-[#e8ddd2] bg-white/80 py-8 text-center text-sm text-[#6f5a57]">
+            <div className="space-y-2">
 
-            <p className="font-medium text-[#3d2c2a]">
-              Magic Moments
-            </p>
+              <p className="font-medium text-[#3d2c2a]">
+                Magic Moments
+              </p>
 
-            <p>
-              Sajt radila – Milena Živković
-            </p>
+              <p>
+                Sajt radio – Milena Živković
+              </p>
 
-            <p>
-              📞 060 / 193 - 83 - 73
-            </p>
+              <p>
+                📞 060 / 193 - 83 - 73
+              </p>
 
-            <p className="text-xs text-[#9c7c5b] pt-2">
-              © {new Date().getFullYear()} Sva prava zadržana
-            </p>
+              <p className="text-xs text-[#9c7c5b] pt-2">
+                © {new Date().getFullYear()} Sva prava zadržana
+              </p>
 
-          </div>
-        </footer>
+            </div>
+          </footer>
+
+          <p className="text-xs text-[#9c7c5b] pt-2">
+            © {new Date().getFullYear()} Sva prava zadržana
+          </p>
+
+        </div>
       </footer>
+    </footer>
 
-    </body>
+    </body >
     </html >
   );
 }
