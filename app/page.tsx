@@ -88,7 +88,7 @@ export default function Home() {
             </div>
 
             <a
-              href="#usluge"
+              href="/usluge"
               className="text-[13px] font-semibold uppercase tracking-[0.04em] text-[#4a4a4a] transition hover:text-[#b88a2c]"
             >
               Usluge
@@ -200,7 +200,7 @@ export default function Home() {
               </div>
 
               <a
-                href="#usluge"
+                href="/usluge"
                 className="border-t border-[#f3eee3] px-3 py-3 text-sm font-semibold uppercase text-[#444]"
                 onClick={() => setMobileOpen(false)}
               >
@@ -386,18 +386,6 @@ export default function Home() {
               <img src="/event3.jpg" alt="Event 3" className="h-72 w-full object-cover" />
             </div>
           </div>
-        </div>
-      </section>
-
-      <section id="galerija" className="bg-white py-20">
-        <div className="mx-auto max-w-5xl px-6 text-center">
-          <h2 className="mb-5 text-3xl font-semibold uppercase tracking-[0.04em] text-[#26313f] md:text-4xl">
-            Galerija
-          </h2>
-          <p className="mx-auto max-w-3xl leading-8 text-[#4b4b4b]">
-            Izdvojeni momenti, pažljivo osmišljeni detalji i inspiracija za vaše
-            naredne Magic Moments proslave.
-          </p>
         </div>
       </section>
     </main>
