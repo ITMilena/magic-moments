@@ -342,9 +342,9 @@ export default function Home() {
             </div>
 
             <div className="grid gap-5 md:grid-cols-3">
-              <img src="/dekor1.jpg" alt="Dekoracija 1" className="h-72 w-full object-cover" />
-              <img src="/dekor2.jpg" alt="Dekoracija 2" className="h-72 w-full object-cover" />
-              <img src="/dekor3.jpg" alt="Dekoracija 3" className="h-72 w-full object-cover" />
+              <img src="/dekoracija1.jpg" alt="Dekoracija 1" className="h-72 w-full object-cover" />
+              <img src="/dekoracija2.jpg" alt="Dekoracija 2" className="h-72 w-full object-cover" />
+              <img src="/dekoracija3.jpeg" alt="Dekoracija 3" className="h-72 w-full object-cover" />
             </div>
           </div>
 
