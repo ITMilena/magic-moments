@@ -51,11 +51,30 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
 
         {/* FOOTER */}
-        <footer className="border-t border-[#e8ddd2] py-6 text-center text-sm text-[#6f5a57]">
-          © {new Date().getFullYear()} Magic Moments
-        </footer>
+        <footer className="border-t border-[#e8ddd2] bg-white/80 py-8 text-center text-sm text-[#6f5a57]">
+          <div className="space-y-2">
 
-      </body>
-    </html>
+            <p className="font-medium text-[#3d2c2a]">
+              Magic Moments
+            </p>
+
+            <p>
+              Sajt radila – Milena Živković
+            </p>
+
+            <p>
+              📞 060 / 193 - 83 - 73
+            </p>
+
+            <p className="text-xs text-[#9c7c5b] pt-2">
+              © {new Date().getFullYear()} Sva prava zadržana
+            </p>
+
+          </div>
+        </footer>
+      </footer>
+
+    </body>
+    </html >
   );
 }
