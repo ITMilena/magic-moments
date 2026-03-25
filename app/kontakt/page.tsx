@@ -27,7 +27,7 @@ export default function KontaktPage() {
                   href="tel:+381601938373"
                   className="text-lg transition hover:text-[#b88a2c]"
                 >
-                  060 / 193 - 83 - 73
+                  060 / 302 - 23 - 49
                 </a>
               </div>
 
@@ -53,7 +53,7 @@ export default function KontaktPage() {
                   rel="noreferrer"
                   className="text-lg transition hover:text-[#b88a2c]"
                 >
-                  @magicmoments
+                  @magic.moments.2026
                 </a>
               </div>
             </div>
