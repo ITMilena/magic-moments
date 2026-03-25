@@ -48,7 +48,7 @@ export default function KontaktPage() {
                   Instagram
                 </p>
                 <a
-                  href="https://instagram.com/"
+                  href="https://www.instagram.com/magic.moments.2026/"
                   target="_blank"
                   rel="noreferrer"
                   className="text-lg transition hover:text-[#b88a2c]"
