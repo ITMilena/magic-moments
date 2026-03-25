@@ -401,75 +401,121 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="kontakt" className="bg-[#fcfaf5] py-20 scroll-mt-28">
-        <div className="mx-auto max-w-5xl px-6">
-          <div className="mb-10 text-center">
-            <h2 className="mb-5 text-3xl font-semibold uppercase tracking-[0.04em] text-[#26313f] md:text-4xl">
+      <section id="kontakt" className="bg-[#f8f5f0] py-24 scroll-mt-28">
+        <div className="mx-auto max-w-6xl px-6">
+
+          {/* NASLOV */}
+          <div className="mb-16 text-center">
+            <p className="mb-3 text-xs uppercase tracking-[0.3em] text-[#b88a2c]">
+              Magic Moments
+            </p>
+            <h2 className="text-4xl font-semibold tracking-[0.04em] text-[#2d2d2d] md:text-5xl">
               Kontakt
             </h2>
-            <p className="mx-auto max-w-3xl text-lg leading-8 text-[#4b4b4b]">
-              Pošaljite upit i zajedno ćemo osmisliti koncept vaše naredne proslave.
+            <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-[#6b6b6b]">
+              Pišite nam i zajedno ćemo kreirati događaj koji ostavlja utisak.
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2">
-            <div className="border border-[#efe8dc] bg-white p-8 shadow-sm">
-              <h3 className="mb-5 text-xl font-semibold uppercase tracking-[0.03em] text-[#26313f]">
+          {/* GRID */}
+          <div className="grid gap-10 md:grid-cols-2">
+
+            {/* LEVA STRANA */}
+            <div className="rounded-3xl bg-white p-10 shadow-[0_10px_30px_rgba(0,0,0,0.05)]">
+              <h3 className="mb-6 text-xl font-semibold uppercase tracking-[0.04em] text-[#2d2d2d]">
                 Kontakt informacije
               </h3>
 
-              <div className="space-y-4 leading-8 text-[#4b4b4b]">
-                <p>
-                  <span className="font-semibold text-[#26313f]">Telefon:</span>{" "}
-                  <a href="tel:+381601938373" className="transition hover:text-[#b88a2c]">
+              <div className="space-y-6 text-[#555]">
+
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-[#b88a2c]">
+                    Telefon
+                  </p>
+                  <a
+                    href="tel:+381601938373"
+                    className="text-lg transition hover:text-[#b88a2c]"
+                  >
                     060 / 193 - 83 - 73
                   </a>
-                </p>
+                </div>
 
-                <p>
-                  <span className="font-semibold text-[#26313f]">Email:</span>{" "}
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-[#b88a2c]">
+                    Email
+                  </p>
                   <a
-                    href="mailto:OVDE_STAVI_SVOJ_EMAIL"
-                    className="transition hover:text-[#b88a2c]"
+                    href="mailto:OVDE_STAVI_EMAIL"
+                    className="text-lg transition hover:text-[#b88a2c]"
                   >
-                    OVDE_STAVI_SVOJ_EMAIL
+                    OVDE_STAVI_EMAIL
                   </a>
-                </p>
+                </div>
 
-                <p>
-                  <span className="font-semibold text-[#26313f]">Instagram:</span>{" "}
+                <div>
+                  <p className="text-xs uppercase tracking-[0.2em] text-[#b88a2c]">
+                    Instagram
+                  </p>
                   <a
                     href="https://instagram.com/"
                     target="_blank"
                     rel="noreferrer"
-                    className="transition hover:text-[#b88a2c]"
+                    className="text-lg transition hover:text-[#b88a2c]"
                   >
                     @magicmoments
                   </a>
-                </p>
+                </div>
+
               </div>
             </div>
 
-            <div className="border border-[#efe8dc] bg-white p-8 text-center shadow-sm md:text-left">
-              <h3 className="mb-5 text-xl font-semibold uppercase tracking-[0.03em] text-[#26313f]">
-                Pošaljite upit
-              </h3>
+            {/* DESNA STRANA */}
+            <div className="flex flex-col justify-between rounded-3xl bg-[#2d2d2d] p-10 text-white shadow-[0_10px_30px_rgba(0,0,0,0.1)]">
 
-              <p className="mb-8 leading-8 text-[#4b4b4b]">
-                Pišite nam za organizaciju rođendana, dekoraciju događaja i elegantne
-                event koncepte. Odgovorićemo vam u najkraćem roku.
-              </p>
+              <div>
+                <p className="text-xs uppercase tracking-[0.3em] text-[#d8c0c6]">
+                  Upit
+                </p>
 
-              <a
-                href="mailto:OVDE_STAVI_SVOJ_EMAIL?subject=Upit%20sa%20sajta%20Magic%20Moments"
-                className="inline-block bg-[#d8c0c6] px-8 py-4 text-sm font-semibold uppercase tracking-[0.10em] text-white transition hover:bg-[#cdaeb7]"
-              >
-                Pošaljite upit
-              </a>
+                <h3 className="mt-4 text-3xl font-semibold">
+                  Pošaljite upit
+                </h3>
+
+                <p className="mt-5 max-w-md text-sm leading-7 text-[#e7e7e7]">
+                  Pišite nam za rođendane, dekoracije i sve vrste događaja.
+                  Odgovaramo brzo i detaljno.
+                </p>
+              </div>
+
+              <div className="mt-10">
+                <a
+                  href="mailto:OVDE_STAVI_EMAIL?subject=Upit%20sa%20sajta%20Magic%20Moments"
+                  className="inline-block rounded-full bg-[#d8c0c6] px-8 py-4 text-sm font-semibold uppercase tracking-[0.1em] text-white transition hover:opacity-90"
+                >
+                  Pošaljite upit
+                </a>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
-    </main>
+
+      <p className="mb-8 leading-8 text-[#4b4b4b]">
+        Pišite nam za organizaciju rođendana, dekoraciju događaja i elegantne
+        event koncepte. Odgovorićemo vam u najkraćem roku.
+      </p>
+
+      <a
+        href="mailto:OVDE_STAVI_SVOJ_EMAIL?subject=Upit%20sa%20sajta%20Magic%20Moments"
+        className="inline-block bg-[#d8c0c6] px-8 py-4 text-sm font-semibold uppercase tracking-[0.10em] text-white transition hover:bg-[#cdaeb7]"
+      >
+        Pošaljite upit
+      </a>
+    </div>
+          </div >
+        </div >
+      </section >
+    </main >
   );
 }
