@@ -19,7 +19,7 @@ export default function Home() {
             />
           </a>
 
-          <nav className="hidden items-center gap-7 xl:gap-8 lg:flex">
+          <nav className="hidden items-center gap-7 lg:flex xl:gap-8">
             <a
               href="#pocetna"
               className="text-[13px] font-semibold uppercase tracking-[0.04em] text-[#4a4a4a] transition hover:text-[#b88a2c]"
@@ -112,6 +112,7 @@ export default function Home() {
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="flex h-10 w-10 items-center justify-center border border-[#e7deca] text-[#444] lg:hidden"
+            aria-label="Otvori meni"
           >
             {mobileOpen ? "✕" : "☰"}
           </button>
@@ -123,6 +124,7 @@ export default function Home() {
               <a
                 href="#pocetna"
                 className="px-3 py-3 text-sm font-semibold uppercase text-[#444]"
+                onClick={() => setMobileOpen(false)}
               >
                 Početna
               </a>
@@ -140,18 +142,21 @@ export default function Home() {
                     <a
                       href="#organizacija-rodjendana"
                       className="block px-5 py-2 text-sm text-[#555]"
+                      onClick={() => setMobileOpen(false)}
                     >
                       Organizacija rođendana
                     </a>
                     <a
                       href="#dekoracija-dogadjaja"
                       className="block px-5 py-2 text-sm text-[#555]"
+                      onClick={() => setMobileOpen(false)}
                     >
                       Dekoracija događaja
                     </a>
                     <a
                       href="#organizacija-dogadjaja"
                       className="block px-5 py-2 text-sm text-[#555]"
+                      onClick={() => setMobileOpen(false)}
                     >
                       Organizacija događaja
                     </a>
@@ -172,18 +177,21 @@ export default function Home() {
                     <a
                       href="#dekoracija-dogadjaja"
                       className="block px-5 py-2 text-sm text-[#555]"
+                      onClick={() => setMobileOpen(false)}
                     >
                       Dekoracija rođendana
                     </a>
                     <a
                       href="#dekoracija-dogadjaja"
                       className="block px-5 py-2 text-sm text-[#555]"
+                      onClick={() => setMobileOpen(false)}
                     >
                       Dekoracija krštenja
                     </a>
                     <a
                       href="#dekoracija-dogadjaja"
                       className="block px-5 py-2 text-sm text-[#555]"
+                      onClick={() => setMobileOpen(false)}
                     >
                       Elegantne event dekoracije
                     </a>
@@ -194,6 +202,7 @@ export default function Home() {
               <a
                 href="#usluge"
                 className="border-t border-[#f3eee3] px-3 py-3 text-sm font-semibold uppercase text-[#444]"
+                onClick={() => setMobileOpen(false)}
               >
                 Usluge
               </a>
@@ -201,6 +210,7 @@ export default function Home() {
               <a
                 href="/galerija"
                 className="border-t border-[#f3eee3] px-3 py-3 text-sm font-semibold uppercase text-[#444]"
+                onClick={() => setMobileOpen(false)}
               >
                 Galerija
               </a>
@@ -208,6 +218,7 @@ export default function Home() {
               <a
                 href="#kontakt"
                 className="border-t border-[#f3eee3] px-3 py-3 text-sm font-semibold uppercase text-[#444]"
+                onClick={() => setMobileOpen(false)}
               >
                 Kontakt
               </a>
@@ -258,8 +269,7 @@ export default function Home() {
 
       <section id="usluge" className="bg-[#fcfaf5] py-20">
         <div className="mx-auto max-w-7xl px-6">
-
-          <div id="organizacija-rodjendana" className="mb-20">
+          <div id="organizacija-rodjendana" className="mb-20 scroll-mt-28">
             <div className="mb-8 flex items-start gap-6">
               <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#dcc5cc] text-white">
                 <svg
@@ -293,25 +303,13 @@ export default function Home() {
             </div>
 
             <div className="grid gap-5 md:grid-cols-3">
-              <img
-                src="/rodjendan1.jpg"
-                alt="Rođendan 1"
-                className="h-72 w-full object-cover"
-              />
-              <img
-                src="/rodjendan2.jpg"
-                alt="Rođendan 2"
-                className="h-72 w-full object-cover"
-              />
-              <img
-                src="/rodjendan3.jpg"
-                alt="Rođendan 3"
-                className="h-72 w-full object-cover"
-              />
+              <img src="/rodjendan1.jpg" alt="Rođendan 1" className="h-72 w-full object-cover" />
+              <img src="/rodjendan2.jpg" alt="Rođendan 2" className="h-72 w-full object-cover" />
+              <img src="/rodjendan3.jpg" alt="Rođendan 3" className="h-72 w-full object-cover" />
             </div>
           </div>
 
-          <div id="dekoracija-dogadjaja" className="mb-20">
+          <div id="dekoracija-dogadjaja" className="mb-20 scroll-mt-28">
             <div className="mb-8 flex items-start gap-6">
               <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#dcc5cc] text-white">
                 <svg
@@ -344,25 +342,13 @@ export default function Home() {
             </div>
 
             <div className="grid gap-5 md:grid-cols-3">
-              <img
-                src="/dekor1.jpg"
-                alt="Dekoracija 1"
-                className="h-72 w-full object-cover"
-              />
-              <img
-                src="/dekor2.jpg"
-                alt="Dekoracija 2"
-                className="h-72 w-full object-cover"
-              />
-              <img
-                src="/dekor3.jpg"
-                alt="Dekoracija 3"
-                className="h-72 w-full object-cover"
-              />
+              <img src="/dekor1.jpg" alt="Dekoracija 1" className="h-72 w-full object-cover" />
+              <img src="/dekor2.jpg" alt="Dekoracija 2" className="h-72 w-full object-cover" />
+              <img src="/dekor3.jpg" alt="Dekoracija 3" className="h-72 w-full object-cover" />
             </div>
           </div>
 
-          <div id="organizacija-dogadjaja">
+          <div id="organizacija-dogadjaja" className="scroll-mt-28">
             <div className="mb-8 flex items-start gap-6">
               <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#dcc5cc] text-white">
                 <svg
@@ -395,21 +381,9 @@ export default function Home() {
             </div>
 
             <div className="grid gap-5 md:grid-cols-3">
-              <img
-                src="/event1.jpg"
-                alt="Event 1"
-                className="h-72 w-full object-cover"
-              />
-              <img
-                src="/event2.jpg"
-                alt="Event 2"
-                className="h-72 w-full object-cover"
-              />
-              <img
-                src="/event3.jpg"
-                alt="Event 3"
-                className="h-72 w-full object-cover"
-              />
+              <img src="/event1.jpg" alt="Event 1" className="h-72 w-full object-cover" />
+              <img src="/event2.jpg" alt="Event 2" className="h-72 w-full object-cover" />
+              <img src="/event3.jpg" alt="Event 3" className="h-72 w-full object-cover" />
             </div>
           </div>
         </div>
@@ -427,20 +401,73 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="kontakt" className="bg-[#fcfaf5] py-20">
-        <div className="mx-auto max-w-4xl px-6 text-center">
-          <h2 className="mb-5 text-3xl font-semibold uppercase tracking-[0.04em] text-[#26313f] md:text-4xl">
-            Kako možemo pomoći?
-          </h2>
-          <p className="mb-8 text-lg leading-8 text-[#4b4b4b]">
-            Pošaljite upit i zajedno ćemo osmisliti koncept vaše naredne proslave.
-          </p>
-          <a
-            href="mailto:info@magicmoments.rs"
-            className="inline-block bg-[#d8c0c6] px-8 py-4 text-sm font-semibold uppercase tracking-[0.10em] text-white transition hover:bg-[#cdaeb7]"
-          >
-            Pošaljite upit
-          </a>
+      <section id="kontakt" className="bg-[#fcfaf5] py-20 scroll-mt-28">
+        <div className="mx-auto max-w-5xl px-6">
+          <div className="mb-10 text-center">
+            <h2 className="mb-5 text-3xl font-semibold uppercase tracking-[0.04em] text-[#26313f] md:text-4xl">
+              Kontakt
+            </h2>
+            <p className="mx-auto max-w-3xl text-lg leading-8 text-[#4b4b4b]">
+              Pošaljite upit i zajedno ćemo osmisliti koncept vaše naredne proslave.
+            </p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2">
+            <div className="border border-[#efe8dc] bg-white p-8 shadow-sm">
+              <h3 className="mb-5 text-xl font-semibold uppercase tracking-[0.03em] text-[#26313f]">
+                Kontakt informacije
+              </h3>
+
+              <div className="space-y-4 leading-8 text-[#4b4b4b]">
+                <p>
+                  <span className="font-semibold text-[#26313f]">Telefon:</span>{" "}
+                  <a href="tel:+381601938373" className="transition hover:text-[#b88a2c]">
+                    060 / 193 - 83 - 73
+                  </a>
+                </p>
+
+                <p>
+                  <span className="font-semibold text-[#26313f]">Email:</span>{" "}
+                  <a
+                    href="mailto:OVDE_STAVI_SVOJ_EMAIL"
+                    className="transition hover:text-[#b88a2c]"
+                  >
+                    OVDE_STAVI_SVOJ_EMAIL
+                  </a>
+                </p>
+
+                <p>
+                  <span className="font-semibold text-[#26313f]">Instagram:</span>{" "}
+                  <a
+                    href="https://instagram.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="transition hover:text-[#b88a2c]"
+                  >
+                    @magicmoments
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div className="border border-[#efe8dc] bg-white p-8 text-center shadow-sm md:text-left">
+              <h3 className="mb-5 text-xl font-semibold uppercase tracking-[0.03em] text-[#26313f]">
+                Pošaljite upit
+              </h3>
+
+              <p className="mb-8 leading-8 text-[#4b4b4b]">
+                Pišite nam za organizaciju rođendana, dekoraciju događaja i elegantne
+                event koncepte. Odgovorićemo vam u najkraćem roku.
+              </p>
+
+              <a
+                href="mailto:OVDE_STAVI_SVOJ_EMAIL?subject=Upit%20sa%20sajta%20Magic%20Moments"
+                className="inline-block bg-[#d8c0c6] px-8 py-4 text-sm font-semibold uppercase tracking-[0.10em] text-white transition hover:bg-[#cdaeb7]"
+              >
+                Pošaljite upit
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </main>
