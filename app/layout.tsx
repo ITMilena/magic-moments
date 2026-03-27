@@ -40,7 +40,7 @@ export default function RootLayout({
       <body className="min-h-full bg-[#fbfaf7] text-[#2f343b]">
         <header className="sticky top-0 z-50 border-b border-[#e9e1d5] bg-white">
           <div className="mx-auto flex h-[92px] max-w-[1380px] items-center justify-between px-4 lg:px-8">
-            <Link href="/" className="flex items-center shrink-0">
+            <Link href="/" className="flex shrink-0 items-center">
               <img
                 src="/Logo.jpeg"
                 alt="Magic Moments"
@@ -48,7 +48,7 @@ export default function RootLayout({
               />
             </Link>
 
-            <nav className="hidden items-center gap-6 xl:gap-8 lg:flex">
+            <nav className="hidden items-center gap-6 lg:flex xl:gap-8">
               <Link
                 href="/"
                 className="text-[13px] font-semibold uppercase tracking-[0.08em] text-[#2f343b] transition hover:text-[#b88a2c]"
@@ -65,44 +65,44 @@ export default function RootLayout({
                   <span className="text-[11px] text-[#b88a2c]">›</span>
                 </button>
 
-                <div className="absolute left-0 top-full h-4 w-[340px]" />
+                <div className="absolute left-0 top-full h-4 w-[360px]" />
 
-                <div className="invisible absolute left-0 top-[calc(100%+4px)] z-50 w-[340px] border border-[#ece3d8] bg-white opacity-0 shadow-[0_10px_25px_rgba(0,0,0,0.06)] transition-all duration-150 group-hover:visible group-hover:opacity-100">
+                <div className="invisible absolute left-0 top-[calc(100%+4px)] z-50 w-[360px] border border-[#ece3d8] bg-white opacity-0 shadow-[0_10px_25px_rgba(0,0,0,0.06)] transition-all duration-150 group-hover:visible group-hover:opacity-100">
                   <Link
-                    href="/organizacija/rodjendana"
+                    href="/organizacija/prvi-rodjendan"
                     className="block border-b border-[#f5eee4] px-5 py-4 text-[15px] text-[#555] transition hover:bg-[#fcf8f0] hover:text-[#b88a2c]"
                   >
-                    Organizacija proslave rođendana
+                    Organizacija prvog rođendana
                   </Link>
                   <Link
-                    href="/organizacija/punoletstva"
+                    href="/organizacija/krstenje"
                     className="block border-b border-[#f5eee4] px-5 py-4 text-[15px] text-[#555] transition hover:bg-[#fcf8f0] hover:text-[#b88a2c]"
                   >
-                    Organizacija proslave 18. rođendana
+                    Organizacija krštenja
                   </Link>
                   <Link
-                    href="/organizacija/krstenja"
+                    href="/organizacija/18-rodjendan"
                     className="block border-b border-[#f5eee4] px-5 py-4 text-[15px] text-[#555] transition hover:bg-[#fcf8f0] hover:text-[#b88a2c]"
                   >
-                    Organizacija proslave krštenja
+                    Organizacija 18. rođendana
                   </Link>
                   <Link
-                    href="/organizacija/rodjenja-deteta"
+                    href="/organizacija/momacko-devojacko"
                     className="block border-b border-[#f5eee4] px-5 py-4 text-[15px] text-[#555] transition hover:bg-[#fcf8f0] hover:text-[#b88a2c]"
                   >
-                    Organizacija proslave rođenja deteta
+                    Momačke i devojačke večeri
                   </Link>
                   <Link
-                    href="/organizacija/korporativnih-dogadjaja"
+                    href="/organizacija/odlazak-u-penziju"
                     className="block border-b border-[#f5eee4] px-5 py-4 text-[15px] text-[#555] transition hover:bg-[#fcf8f0] hover:text-[#b88a2c]"
                   >
-                    Organizacija korporativnih događaja
+                    Odlazak u penziju
                   </Link>
                   <Link
-                    href="/organizacija/seminara-i-kongresa"
+                    href="/organizacija/zurka-iznenadjenja"
                     className="block px-5 py-4 text-[15px] text-[#555] transition hover:bg-[#fcf8f0] hover:text-[#b88a2c]"
                   >
-                    Organizacija seminara i kongresa
+                    Žurke iznenađenja
                   </Link>
                 </div>
               </div>
@@ -138,10 +138,10 @@ export default function RootLayout({
                     Dekoracija krštenja
                   </Link>
                   <Link
-                    href="/dekoracije/rodjenje-deteta"
+                    href="/dekoracije/prvi-rodjendan"
                     className="block px-5 py-4 text-[15px] text-[#555] transition hover:bg-[#fcf8f0] hover:text-[#b88a2c]"
                   >
-                    Dekoracija rođenja deteta
+                    Dekoracija prvog rođendana
                   </Link>
                 </div>
               </div>
@@ -155,21 +155,54 @@ export default function RootLayout({
                   <span className="text-[11px] text-[#b88a2c]">›</span>
                 </button>
 
-                <div className="absolute left-1/2 top-full h-4 w-[760px] -translate-x-1/2" />
+                <div className="absolute left-1/2 top-full h-4 w-[860px] -translate-x-1/2" />
 
-                <div className="invisible absolute left-1/2 top-[calc(100%+4px)] z-50 w-[760px] -translate-x-1/2 border border-[#ece3d8] bg-white opacity-0 shadow-[0_10px_25px_rgba(0,0,0,0.06)] transition-all duration-150 group-hover:visible group-hover:opacity-100">
+                <div className="invisible absolute left-1/2 top-[calc(100%+4px)] z-50 w-[860px] -translate-x-1/2 border border-[#ece3d8] bg-white opacity-0 shadow-[0_10px_25px_rgba(0,0,0,0.06)] transition-all duration-150 group-hover:visible group-hover:opacity-100">
                   <div className="grid grid-cols-3">
                     <div className="border-r border-[#f1ebe2] p-6">
                       <p className="mb-4 text-xs font-semibold uppercase tracking-[0.12em] text-[#b88a2c]">
-                        Muzika i zabava
+                        Organizacija događaja
                       </p>
 
                       <div className="flex flex-col">
                         <Link
-                          href="/usluge#bendovi"
+                          href="/usluge#planiranje-koordinacija"
                           className="py-2 text-[15px] text-[#444] transition hover:text-[#b88a2c]"
                         >
-                          Bendovi za proslave
+                          Planiranje i koordinacija događaja
+                        </Link>
+                        <Link
+                          href="/usluge#rezervacija-sale"
+                          className="py-2 text-[15px] text-[#444] transition hover:text-[#b88a2c]"
+                        >
+                          Pronalaženje i rezervacija sale / lokala
+                        </Link>
+                        <Link
+                          href="/usluge#muzicki-program"
+                          className="py-2 text-[15px] text-[#444] transition hover:text-[#b88a2c]"
+                        >
+                          Organizacija muzičkog programa
+                        </Link>
+                      </div>
+                    </div>
+
+                    <div className="border-r border-[#f1ebe2] p-6">
+                      <p className="mb-4 text-xs font-semibold uppercase tracking-[0.12em] text-[#b88a2c]">
+                        Prostor i dekoracija
+                      </p>
+
+                      <div className="flex flex-col">
+                        <Link
+                          href="/usluge#dizajn-dekoracija"
+                          className="py-2 text-[15px] text-[#444] transition hover:text-[#b88a2c]"
+                        >
+                          Dizajn i dekoracija prostora
+                        </Link>
+                        <Link
+                          href="/usluge#ketering"
+                          className="py-2 text-[15px] text-[#444] transition hover:text-[#b88a2c]"
+                        >
+                          Ketering usluge po vašem izboru
                         </Link>
                         <Link
                           href="/usluge#animatori"
@@ -177,65 +210,20 @@ export default function RootLayout({
                         >
                           Animatori za decu
                         </Link>
-                        <Link
-                          href="/usluge#voditelji"
-                          className="py-2 text-[15px] text-[#444] transition hover:text-[#b88a2c]"
-                        >
-                          Voditelji i zabavni program
-                        </Link>
                       </div>
                     </div>
 
-                    <div className="border-r border-[#f1ebe2] p-6">
+                    <div className="p-6">
                       <p className="mb-4 text-xs font-semibold uppercase tracking-[0.12em] text-[#b88a2c]">
                         Foto i video
                       </p>
 
                       <div className="flex flex-col">
                         <Link
-                          href="/usluge#fotografi"
+                          href="/usluge#foto-video"
                           className="py-2 text-[15px] text-[#444] transition hover:text-[#b88a2c]"
                         >
-                          Fotografisanje događaja
-                        </Link>
-                        <Link
-                          href="/usluge#snimanje"
-                          className="py-2 text-[15px] text-[#444] transition hover:text-[#b88a2c]"
-                        >
-                          Video snimanje proslave
-                        </Link>
-                        <Link
-                          href="/usluge#foto-kutak"
-                          className="py-2 text-[15px] text-[#444] transition hover:text-[#b88a2c]"
-                        >
-                          Foto kutak i dodatni sadržaj
-                        </Link>
-                      </div>
-                    </div>
-
-                    <div className="p-6">
-                      <p className="mb-4 text-xs font-semibold uppercase tracking-[0.12em] text-[#b88a2c]">
-                        Dodatno
-                      </p>
-
-                      <div className="flex flex-col">
-                        <Link
-                          href="/usluge#pozivnice"
-                          className="py-2 text-[15px] text-[#444] transition hover:text-[#b88a2c]"
-                        >
-                          Pozivnice za proslave
-                        </Link>
-                        <Link
-                          href="/usluge#dekoracija-prostora"
-                          className="py-2 text-[15px] text-[#444] transition hover:text-[#b88a2c]"
-                        >
-                          Dekoracija prostora
-                        </Link>
-                        <Link
-                          href="/usluge#koordinacija"
-                          className="py-2 text-[15px] text-[#444] transition hover:text-[#b88a2c]"
-                        >
-                          Koordinacija događaja
+                          Fotografisanje i video snimanje događaja
                         </Link>
                       </div>
                     </div>
@@ -306,46 +294,46 @@ export default function RootLayout({
                   {orgOpen && (
                     <div className="pb-2">
                       <Link
-                        href="/organizacija/rodjendana"
+                        href="/organizacija/prvi-rodjendan"
                         className="block px-5 py-2 text-sm text-[#555]"
                         onClick={closeMobileMenu}
                       >
-                        Organizacija proslave rođendana
+                        Organizacija prvog rođendana
                       </Link>
                       <Link
-                        href="/organizacija/punoletstva"
+                        href="/organizacija/krstenje"
                         className="block px-5 py-2 text-sm text-[#555]"
                         onClick={closeMobileMenu}
                       >
-                        Organizacija proslave 18. rođendana
+                        Organizacija krštenja
                       </Link>
                       <Link
-                        href="/organizacija/krstenja"
+                        href="/organizacija/18-rodjendan"
                         className="block px-5 py-2 text-sm text-[#555]"
                         onClick={closeMobileMenu}
                       >
-                        Organizacija proslave krštenja
+                        Organizacija 18. rođendana
                       </Link>
                       <Link
-                        href="/organizacija/rodjenja-deteta"
+                        href="/organizacija/momacko-devojacko"
                         className="block px-5 py-2 text-sm text-[#555]"
                         onClick={closeMobileMenu}
                       >
-                        Organizacija proslave rođenja deteta
+                        Momačke i devojačke večeri
                       </Link>
                       <Link
-                        href="/organizacija/korporativnih-dogadjaja"
+                        href="/organizacija/odlazak-u-penziju"
                         className="block px-5 py-2 text-sm text-[#555]"
                         onClick={closeMobileMenu}
                       >
-                        Organizacija korporativnih događaja
+                        Odlazak u penziju
                       </Link>
                       <Link
-                        href="/organizacija/seminara-i-kongresa"
+                        href="/organizacija/zurka-iznenadjenja"
                         className="block px-5 py-2 text-sm text-[#555]"
                         onClick={closeMobileMenu}
                       >
-                        Organizacija seminara i kongresa
+                        Žurke iznenađenja
                       </Link>
                     </div>
                   )}
@@ -385,11 +373,11 @@ export default function RootLayout({
                         Dekoracija krštenja
                       </Link>
                       <Link
-                        href="/dekoracije/rodjenje-deteta"
+                        href="/dekoracije/prvi-rodjendan"
                         className="block px-5 py-2 text-sm text-[#555]"
                         onClick={closeMobileMenu}
                       >
-                        Dekoracija rođenja deteta
+                        Dekoracija prvog rođendana
                       </Link>
                     </div>
                   )}
@@ -410,11 +398,39 @@ export default function RootLayout({
                   {uslugeOpen && (
                     <div className="pb-2">
                       <Link
-                        href="/usluge#bendovi"
+                        href="/usluge#planiranje-koordinacija"
                         className="block px-5 py-2 text-sm text-[#555]"
                         onClick={closeMobileMenu}
                       >
-                        Bendovi za proslave
+                        Planiranje i koordinacija događaja
+                      </Link>
+                      <Link
+                        href="/usluge#rezervacija-sale"
+                        className="block px-5 py-2 text-sm text-[#555]"
+                        onClick={closeMobileMenu}
+                      >
+                        Pronalaženje i rezervacija sale / lokala
+                      </Link>
+                      <Link
+                        href="/usluge#muzicki-program"
+                        className="block px-5 py-2 text-sm text-[#555]"
+                        onClick={closeMobileMenu}
+                      >
+                        Organizacija muzičkog programa
+                      </Link>
+                      <Link
+                        href="/usluge#dizajn-dekoracija"
+                        className="block px-5 py-2 text-sm text-[#555]"
+                        onClick={closeMobileMenu}
+                      >
+                        Dizajn i dekoracija prostora
+                      </Link>
+                      <Link
+                        href="/usluge#ketering"
+                        className="block px-5 py-2 text-sm text-[#555]"
+                        onClick={closeMobileMenu}
+                      >
+                        Ketering usluge po vašem izboru
                       </Link>
                       <Link
                         href="/usluge#animatori"
@@ -424,53 +440,11 @@ export default function RootLayout({
                         Animatori za decu
                       </Link>
                       <Link
-                        href="/usluge#voditelji"
+                        href="/usluge#foto-video"
                         className="block px-5 py-2 text-sm text-[#555]"
                         onClick={closeMobileMenu}
                       >
-                        Voditelji i zabavni program
-                      </Link>
-                      <Link
-                        href="/usluge#fotografi"
-                        className="block px-5 py-2 text-sm text-[#555]"
-                        onClick={closeMobileMenu}
-                      >
-                        Fotografisanje događaja
-                      </Link>
-                      <Link
-                        href="/usluge#snimanje"
-                        className="block px-5 py-2 text-sm text-[#555]"
-                        onClick={closeMobileMenu}
-                      >
-                        Video snimanje proslave
-                      </Link>
-                      <Link
-                        href="/usluge#foto-kutak"
-                        className="block px-5 py-2 text-sm text-[#555]"
-                        onClick={closeMobileMenu}
-                      >
-                        Foto kutak i dodatni sadržaj
-                      </Link>
-                      <Link
-                        href="/usluge#pozivnice"
-                        className="block px-5 py-2 text-sm text-[#555]"
-                        onClick={closeMobileMenu}
-                      >
-                        Pozivnice za proslave
-                      </Link>
-                      <Link
-                        href="/usluge#dekoracija-prostora"
-                        className="block px-5 py-2 text-sm text-[#555]"
-                        onClick={closeMobileMenu}
-                      >
-                        Dekoracija prostora
-                      </Link>
-                      <Link
-                        href="/usluge#koordinacija"
-                        className="block px-5 py-2 text-sm text-[#555]"
-                        onClick={closeMobileMenu}
-                      >
-                        Koordinacija događaja
+                        Fotografisanje i video snimanje događaja
                       </Link>
                     </div>
                   )}
