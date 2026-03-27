@@ -125,7 +125,7 @@ export default function RodjendanPage() {
       <section className="relative">
         <div className="absolute inset-0 bg-black/30" />
         <img
-          src="/rodjendan-hero.jpg"
+          src="/punoletstvo-hero.jpg"
           alt="Dekoracija rođendana"
           className="h-[240px] w-full object-cover md:h-[360px]"
         />
@@ -324,7 +324,7 @@ export default function RodjendanPage() {
           <TitleBlock title="Saveti za dekoraciju rođendana" />
 
           <img
-            src="/rodjendan-saveti.jpg"
+            src="/punoletstvo-saveti.jpg"
             alt="Saveti za dekoraciju rođendana"
             className="mx-auto h-[300px] w-full max-w-4xl object-cover md:h-[520px]"
           />
