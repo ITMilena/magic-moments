@@ -1,6 +1,5 @@
 "use client";
 
-import type { Metadata } from "next";
 import Link from "next/link";
 import { useState } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
