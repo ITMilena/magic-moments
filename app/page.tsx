@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 
 export default function Home() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -9,112 +8,110 @@ export default function Home() {
   const [dekorOpen, setDekorOpen] = useState(false);
 
   return (
-    <main className="min-h-screen bg-[#fbfaf7] text-[#2f343b]">
-      <header className="sticky top-0 z-50 border-b border-[#ebe4da] bg-white/95 backdrop-blur">
-        <div className="mx-auto flex h-[92px] max-w-[1280px] items-center justify-between px-6 lg:px-10">
-          <Link href="/" className="flex items-center">
+    <main className="min-h-screen bg-white text-[#222]">
+      <header className="sticky top-0 z-50 border-b border-[#ece7dc] bg-white">
+        <div className="mx-auto flex h-[90px] max-w-[1280px] items-center justify-between px-6 lg:px-10">
+          <a href="#pocetna" className="flex items-center">
             <img
               src="/Logo.jpeg"
               alt="Magic Moments"
               className="h-14 w-auto object-contain"
             />
-          </Link>
+          </a>
 
-          <nav className="hidden items-center gap-8 lg:flex">
-            <Link
-              href="/"
-              className="text-[13px] font-semibold uppercase tracking-[0.08em] text-[#2f343b] transition hover:text-[#b88a2c]"
+          <nav className="hidden items-center gap-7 xl:gap-8 lg:flex">
+            <a
+              href="#pocetna"
+              className="text-[13px] font-semibold uppercase tracking-[0.04em] text-[#4a4a4a] transition hover:text-[#b88a2c]"
             >
               Početna
-            </Link>
+            </a>
 
             <div className="group relative">
-              <button
-                type="button"
-                className="flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.08em] text-[#2f343b] transition hover:text-[#b88a2c]"
-              >
+              <button className="flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.04em] text-[#4a4a4a] transition hover:text-[#b88a2c]">
                 Organizacija
                 <span className="text-[11px] text-[#b88a2c]">›</span>
               </button>
 
               <div className="absolute left-0 top-full h-4 w-72" />
 
-              <div className="invisible absolute left-0 top-[calc(100%+4px)] z-50 min-w-[260px] border border-[#eee6db] bg-white opacity-0 shadow-[0_10px_25px_rgba(0,0,0,0.06)] transition-all duration-150 group-hover:visible group-hover:opacity-100">
-                <Link
-                  href="/usluge#organizacija-rodjendana"
-                  className="block px-5 py-4 text-[13px] text-[#555] transition hover:bg-[#fcf8f0] hover:text-[#b88a2c]"
+              <div className="invisible absolute left-0 top-[calc(100%+4px)] z-50 min-w-[250px] border border-[#f0eadf] bg-white opacity-0 shadow-[0_6px_16px_rgba(0,0,0,0.04)] transition-all duration-150 group-hover:visible group-hover:opacity-100">
+                <a
+                  href="#organizacija-rodjendana"
+                  className="block px-4 py-3 text-[13px] text-[#555] transition hover:bg-[#fcf8ef] hover:text-[#b88a2c]"
                 >
                   Organizacija rođendana
-                </Link>
-                <Link
-                  href="/usluge#organizacija-dogadjaja"
-                  className="block px-5 py-4 text-[13px] text-[#555] transition hover:bg-[#fcf8f0] hover:text-[#b88a2c]"
+                </a>
+                <a
+                  href="#dekoracija-dogadjaja"
+                  className="block px-4 py-3 text-[13px] text-[#555] transition hover:bg-[#fcf8ef] hover:text-[#b88a2c]"
+                >
+                  Dekoracija događaja
+                </a>
+                <a
+                  href="#organizacija-dogadjaja"
+                  className="block px-4 py-3 text-[13px] text-[#555] transition hover:bg-[#fcf8ef] hover:text-[#b88a2c]"
                 >
                   Organizacija događaja
-                </Link>
+                </a>
               </div>
             </div>
 
             <div className="group relative">
-              <button
-                type="button"
-                className="flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.08em] text-[#2f343b] transition hover:text-[#b88a2c]"
-              >
+              <button className="flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.04em] text-[#4a4a4a] transition hover:text-[#b88a2c]">
                 Dekoracija
                 <span className="text-[11px] text-[#b88a2c]">›</span>
               </button>
 
-              <div className="absolute left-0 top-full h-4 w-72" />
+              <div className="absolute left-0 top-full h-4 w-64" />
 
-              <div className="invisible absolute left-0 top-[calc(100%+4px)] z-50 min-w-[280px] border border-[#eee6db] bg-white opacity-0 shadow-[0_10px_25px_rgba(0,0,0,0.06)] transition-all duration-150 group-hover:visible group-hover:opacity-100">
-                <Link
-                  href="/dekoracije/rodjendan"
-                  className="block px-5 py-4 text-[13px] text-[#555] transition hover:bg-[#fcf8f0] hover:text-[#b88a2c]"
+              <div className="invisible absolute left-0 top-[calc(100%+4px)] z-50 min-w-[220px] border border-[#f0eadf] bg-white opacity-0 shadow-[0_6px_16px_rgba(0,0,0,0.04)] transition-all duration-150 group-hover:visible group-hover:opacity-100">
+                <a
+                  href="#dekoracija-dogadjaja"
+                  className="block px-4 py-3 text-[13px] text-[#555] transition hover:bg-[#fcf8ef] hover:text-[#b88a2c]"
                 >
                   Dekoracija rođendana
-                </Link>
-                <Link
-                  href="/dekoracije/krstenje"
-                  className="block px-5 py-4 text-[13px] text-[#555] transition hover:bg-[#fcf8f0] hover:text-[#b88a2c]"
+                </a>
+                <a
+                  href="#dekoracija-dogadjaja"
+                  className="block px-4 py-3 text-[13px] text-[#555] transition hover:bg-[#fcf8ef] hover:text-[#b88a2c]"
                 >
                   Dekoracija krštenja
-                </Link>
-                <Link
-                  href="/dekoracije/punoletstvo"
-                  className="block px-5 py-4 text-[13px] text-[#555] transition hover:bg-[#fcf8f0] hover:text-[#b88a2c]"
+                </a>
+                <a
+                  href="#dekoracija-dogadjaja"
+                  className="block px-4 py-3 text-[13px] text-[#555] transition hover:bg-[#fcf8ef] hover:text-[#b88a2c]"
                 >
                   Elegantne event dekoracije
-                </Link>
+                </a>
               </div>
             </div>
 
-            <Link
-              href="/usluge"
-              className="text-[13px] font-semibold uppercase tracking-[0.08em] text-[#2f343b] transition hover:text-[#b88a2c]"
+            <a
+              href="#usluge"
+              className="text-[13px] font-semibold uppercase tracking-[0.04em] text-[#4a4a4a] transition hover:text-[#b88a2c]"
             >
               Usluge
-            </Link>
+            </a>
 
-            <Link
+            <a
               href="/galerija"
-              className="text-[13px] font-semibold uppercase tracking-[0.08em] text-[#2f343b] transition hover:text-[#b88a2c]"
+              className="text-[13px] font-semibold uppercase tracking-[0.04em] text-[#4a4a4a] transition hover:text-[#b88a2c]"
             >
               Galerija
-            </Link>
+            </a>
 
-            <Link
-              href="/kontakt"
-              className="text-[13px] font-semibold uppercase tracking-[0.08em] text-[#2f343b] transition hover:text-[#b88a2c]"
+            <a
+              href="#kontakt"
+              className="text-[13px] font-semibold uppercase tracking-[0.04em] text-[#4a4a4a] transition hover:text-[#b88a2c]"
             >
               Kontakt
-            </Link>
+            </a>
           </nav>
 
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             className="flex h-10 w-10 items-center justify-center border border-[#e7deca] text-[#444] lg:hidden"
-            aria-label="Otvori meni"
-            type="button"
           >
             {mobileOpen ? "✕" : "☰"}
           </button>
@@ -123,40 +120,41 @@ export default function Home() {
         {mobileOpen && (
           <div className="border-t border-[#ece7dc] bg-white px-4 py-4 lg:hidden">
             <div className="flex flex-col">
-              <Link
-                href="/"
+              <a
+                href="#pocetna"
                 className="px-3 py-3 text-sm font-semibold uppercase text-[#444]"
-                onClick={() => setMobileOpen(false)}
               >
                 Početna
-              </Link>
+              </a>
 
               <div className="border-t border-[#f3eee3]">
                 <button
                   onClick={() => setOrgOpen(!orgOpen)}
                   className="flex w-full items-center justify-between px-3 py-3 text-left text-sm font-semibold uppercase text-[#444]"
-                  type="button"
                 >
                   Organizacija
                   <span className="text-[#b88a2c]">{orgOpen ? "−" : "+"}</span>
                 </button>
-
                 {orgOpen && (
                   <div className="pb-2">
-                    <Link
-                      href="/usluge#organizacija-rodjendana"
+                    <a
+                      href="#organizacija-rodjendana"
                       className="block px-5 py-2 text-sm text-[#555]"
-                      onClick={() => setMobileOpen(false)}
                     >
                       Organizacija rođendana
-                    </Link>
-                    <Link
-                      href="/usluge#organizacija-dogadjaja"
+                    </a>
+                    <a
+                      href="#dekoracija-dogadjaja"
                       className="block px-5 py-2 text-sm text-[#555]"
-                      onClick={() => setMobileOpen(false)}
+                    >
+                      Dekoracija događaja
+                    </a>
+                    <a
+                      href="#organizacija-dogadjaja"
+                      className="block px-5 py-2 text-sm text-[#555]"
                     >
                       Organizacija događaja
-                    </Link>
+                    </a>
                   </div>
                 )}
               </div>
@@ -165,187 +163,284 @@ export default function Home() {
                 <button
                   onClick={() => setDekorOpen(!dekorOpen)}
                   className="flex w-full items-center justify-between px-3 py-3 text-left text-sm font-semibold uppercase text-[#444]"
-                  type="button"
                 >
                   Dekoracija
                   <span className="text-[#b88a2c]">{dekorOpen ? "−" : "+"}</span>
                 </button>
-
                 {dekorOpen && (
                   <div className="pb-2">
-                    <Link
-                      href="/dekoracije/rodjendan"
+                    <a
+                      href="#dekoracija-dogadjaja"
                       className="block px-5 py-2 text-sm text-[#555]"
-                      onClick={() => setMobileOpen(false)}
                     >
                       Dekoracija rođendana
-                    </Link>
-                    <Link
-                      href="/dekoracije/krstenje"
+                    </a>
+                    <a
+                      href="#dekoracija-dogadjaja"
                       className="block px-5 py-2 text-sm text-[#555]"
-                      onClick={() => setMobileOpen(false)}
                     >
                       Dekoracija krštenja
-                    </Link>
-                    <Link
-                      href="/dekoracije/punoletstvo"
+                    </a>
+                    <a
+                      href="#dekoracija-dogadjaja"
                       className="block px-5 py-2 text-sm text-[#555]"
-                      onClick={() => setMobileOpen(false)}
                     >
                       Elegantne event dekoracije
-                    </Link>
+                    </a>
                   </div>
                 )}
               </div>
 
-              <Link
-                href="/usluge"
+              <a
+                href="#usluge"
                 className="border-t border-[#f3eee3] px-3 py-3 text-sm font-semibold uppercase text-[#444]"
-                onClick={() => setMobileOpen(false)}
               >
                 Usluge
-              </Link>
+              </a>
 
-              <Link
+              <a
                 href="/galerija"
                 className="border-t border-[#f3eee3] px-3 py-3 text-sm font-semibold uppercase text-[#444]"
-                onClick={() => setMobileOpen(false)}
               >
                 Galerija
-              </Link>
+              </a>
 
-              <Link
-                href="/kontakt"
+              <a
+                href="#kontakt"
                 className="border-t border-[#f3eee3] px-3 py-3 text-sm font-semibold uppercase text-[#444]"
-                onClick={() => setMobileOpen(false)}
               >
                 Kontakt
-              </Link>
+              </a>
             </div>
           </div>
         )}
       </header>
 
       <section
-        className="relative overflow-hidden"
+        id="pocetna"
+        className="relative flex min-h-[78vh] items-center justify-center bg-cover bg-center px-4"
         style={{ backgroundImage: "url('/pocetna.jpeg')" }}
       >
-        <div className="absolute inset-0 bg-black/35" />
-        <div className="relative mx-auto flex min-h-[78vh] max-w-[1400px] items-center justify-center px-6 py-24 text-center">
-          <div className="max-w-5xl text-white">
-            <p className="mb-4 text-xs uppercase tracking-[0.35em] text-white/80">
-              Magic Moments
-            </p>
-            <h1 className="mb-6 text-4xl font-semibold uppercase tracking-[0.08em] md:text-6xl xl:text-7xl">
-              Organizacija i dekoracija proslava
-            </h1>
-            <p className="mx-auto max-w-3xl text-base leading-8 text-white/90 md:text-xl">
-              Elegantni koncepti, pažljivo birani detalji i profesionalna podrška
-              od prve ideje do realizacije događaja.
-            </p>
+        <div className="absolute inset-0 bg-black/45" />
+        <div className="absolute inset-0 backdrop-blur-[1.5px]" />
 
-            <div className="mt-10">
-              <Link
-                href="/kontakt"
-                className="inline-block border border-white/70 bg-white/10 px-10 py-4 text-sm font-semibold uppercase tracking-[0.14em] text-white transition hover:bg-white hover:text-[#2f343b]"
-              >
-                Kontaktirajte nas
-              </Link>
+        <div className="relative z-10 mx-auto max-w-5xl text-center text-white">
+          <h1 className="mb-6 text-4xl font-semibold uppercase tracking-[0.03em] md:text-6xl lg:text-7xl">
+            Magic Moments
+          </h1>
+
+          <p className="mx-auto mb-8 max-w-4xl text-base leading-8 text-white/95 md:text-xl">
+            Organizacija događaja i proslava uz pažljivo osmišljene detalje,
+            elegantnu dekoraciju i atmosferu koja se pamti.
+          </p>
+
+          <a
+            href="#kontakt"
+            className="inline-block bg-[#d8c0c6] px-8 py-4 text-sm font-semibold uppercase tracking-[0.10em] text-white transition hover:bg-[#cdaeb7]"
+          >
+            Kontaktirajte nas
+          </a>
+        </div>
+      </section>
+
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-5xl px-6 text-center">
+          <h2 className="mb-5 text-3xl font-semibold uppercase tracking-[0.04em] text-[#26313f] md:text-4xl">
+            Stručna pomoć pri organizaciji važnih događaja
+          </h2>
+          <p className="mx-auto max-w-3xl leading-8 text-[#4b4b4b]">
+            Magic Moments pruža podršku pri organizaciji proslava i događaja,
+            od prve ideje do realizacije, uz fokus na estetiku, dobru koordinaciju
+            i skladno iskustvo za klijente i goste.
+          </p>
+        </div>
+      </section>
+
+      <section id="usluge" className="bg-[#fcfaf5] py-20">
+        <div className="mx-auto max-w-7xl px-6">
+
+          <div id="organizacija-rodjendana" className="mb-20">
+            <div className="mb-8 flex items-start gap-6">
+              <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#dcc5cc] text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-8 w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 3v4m-4 4h8m-9 8h10a2 2 0 002-2v-3H5v3a2 2 0 002 2zm-1-8h12l-1-4H8l-1 4z"
+                  />
+                </svg>
+              </div>
+
+              <div>
+                <h3 className="mb-4 text-2xl font-semibold uppercase tracking-[0.03em] text-[#26313f]">
+                  Organizacija proslave rođendana
+                </h3>
+                <p className="max-w-4xl text-lg leading-9 text-[#4b4b4b]">
+                  Kako bi vaša proslava rođendana bila nezaboravna, neophodni su
+                  pažljivo planiranje i detaljna organizacija. Mi smo tu da vam
+                  pomognemo! Dekoracija prostora, muzika, fotograf i celokupan
+                  koncept događaja samo su deo usluga koje nudimo kako bismo
+                  vaš važan dan učinili magičnim i besprekornim.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid gap-5 md:grid-cols-3">
+              <img
+                src="/rodjendan1.jpg"
+                alt="Rođendan 1"
+                className="h-72 w-full object-cover"
+              />
+              <img
+                src="/rodjendan2.jpg"
+                alt="Rođendan 2"
+                className="h-72 w-full object-cover"
+              />
+              <img
+                src="/rodjendan3.jpg"
+                alt="Rođendan 3"
+                className="h-72 w-full object-cover"
+              />
+            </div>
+          </div>
+
+          <div id="dekoracija-dogadjaja" className="mb-20">
+            <div className="mb-8 flex items-start gap-6">
+              <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#dcc5cc] text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-8 w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v12m6-6H6"
+                  />
+                </svg>
+              </div>
+
+              <div>
+                <h3 className="mb-4 text-2xl font-semibold uppercase tracking-[0.03em] text-[#26313f]">
+                  Dekoracija događaja
+                </h3>
+                <p className="max-w-4xl text-lg leading-9 text-[#4b4b4b]">
+                  Elegantna dekoracija prostora igra ključnu ulogu u stvaranju
+                  atmosfere. Kroz pažljivo birane detalje, zlatne akcente i
+                  sofisticirane kompozicije kreiramo vizuelni identitet događaja
+                  koji izgleda skladno, luksuzno i upečatljivo.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid gap-5 md:grid-cols-3">
+              <img
+                src="/dekor1.jpg"
+                alt="Dekoracija 1"
+                className="h-72 w-full object-cover"
+              />
+              <img
+                src="/dekor2.jpg"
+                alt="Dekoracija 2"
+                className="h-72 w-full object-cover"
+              />
+              <img
+                src="/dekor3.jpg"
+                alt="Dekoracija 3"
+                className="h-72 w-full object-cover"
+              />
+            </div>
+          </div>
+
+          <div id="organizacija-dogadjaja">
+            <div className="mb-8 flex items-start gap-6">
+              <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#dcc5cc] text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-8 w-8"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8 7V5a4 4 0 118 0v2m-9 0h10a2 2 0 012 2v8a2 2 0 01-2 2H7a2 2 0 01-2-2V9a2 2 0 012-2z"
+                  />
+                </svg>
+              </div>
+
+              <div>
+                <h3 className="mb-4 text-2xl font-semibold uppercase tracking-[0.03em] text-[#26313f]">
+                  Organizacija događaja
+                </h3>
+                <p className="max-w-4xl text-lg leading-9 text-[#4b4b4b]">
+                  Organizujemo privatne i poslovne događaje sa profesionalnim
+                  pristupom, jasnim planom i estetski usklađenom realizacijom.
+                  Naš cilj je da svaki događaj izgleda elegantno, funkcionalno
+                  i ostavi snažan utisak na goste.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid gap-5 md:grid-cols-3">
+              <img
+                src="/event1.jpg"
+                alt="Event 1"
+                className="h-72 w-full object-cover"
+              />
+              <img
+                src="/event2.jpg"
+                alt="Event 2"
+                className="h-72 w-full object-cover"
+              />
+              <img
+                src="/event3.jpg"
+                alt="Event 3"
+                className="h-72 w-full object-cover"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-6xl px-6 text-center">
-          <p className="mb-3 text-xs uppercase tracking-[0.3em] text-[#b88a2c]">
-            O nama
-          </p>
-          <h2 className="mb-6 text-3xl font-semibold uppercase tracking-[0.04em] text-[#26313f] md:text-4xl">
-            Posebni trenuci zaslužuju pažljivo osmišljen ambijent
+      <section id="galerija" className="bg-white py-20">
+        <div className="mx-auto max-w-5xl px-6 text-center">
+          <h2 className="mb-5 text-3xl font-semibold uppercase tracking-[0.04em] text-[#26313f] md:text-4xl">
+            Galerija
           </h2>
-          <p className="mx-auto max-w-4xl text-lg leading-9 text-[#4b4b4b]">
-            Magic Moments pruža podršku pri organizaciji i dekoraciji proslava,
-            sa fokusom na estetiku, koordinaciju i osećaj sklada. Naš cilj je da
-            svaki događaj izgleda otmeno, funkcionalno i potpuno prilagođeno
-            vašim željama.
+          <p className="mx-auto max-w-3xl leading-8 text-[#4b4b4b]">
+            Izdvojeni momenti, pažljivo osmišljeni detalji i inspiracija za vaše
+            naredne Magic Moments proslave.
           </p>
         </div>
       </section>
 
-      <section className="bg-[#f6f4ef] py-20">
-        <div className="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-3">
-          <Link
-            href="/usluge"
-            className="group border border-[#e8dfd2] bg-white p-8 transition hover:-translate-y-1 hover:shadow-[0_10px_25px_rgba(0,0,0,0.05)]"
-          >
-            <p className="mb-3 text-xs uppercase tracking-[0.28em] text-[#b88a2c]">
-              01
-            </p>
-            <h3 className="mb-4 text-2xl font-semibold uppercase text-[#26313f]">
-              Organizacija
-            </h3>
-            <p className="leading-8 text-[#555]">
-              Jasna priprema, pažljivo planiranje i koordinacija svakog segmenta
-              događaja.
-            </p>
-          </Link>
-
-          <Link
-            href="/dekoracije/krstenje"
-            className="group border border-[#e8dfd2] bg-white p-8 transition hover:-translate-y-1 hover:shadow-[0_10px_25px_rgba(0,0,0,0.05)]"
-          >
-            <p className="mb-3 text-xs uppercase tracking-[0.28em] text-[#b88a2c]">
-              02
-            </p>
-            <h3 className="mb-4 text-2xl font-semibold uppercase text-[#26313f]">
-              Dekoracija
-            </h3>
-            <p className="leading-8 text-[#555]">
-              Nežni tonovi, luksuzni detalji i skladan vizuelni identitet svake
-              proslave.
-            </p>
-          </Link>
-
-          <Link
-            href="/kontakt"
-            className="group border border-[#e8dfd2] bg-white p-8 transition hover:-translate-y-1 hover:shadow-[0_10px_25px_rgba(0,0,0,0.05)]"
-          >
-            <p className="mb-3 text-xs uppercase tracking-[0.28em] text-[#b88a2c]">
-              03
-            </p>
-            <h3 className="mb-4 text-2xl font-semibold uppercase text-[#26313f]">
-              Saradnja
-            </h3>
-            <p className="leading-8 text-[#555]">
-              Od prve konsultacije do realizacije, vodimo vas kroz svaki korak
-              jasno i bez stresa.
-            </p>
-          </Link>
-        </div>
-      </section>
-
-      <section className="bg-white py-20">
-        <div className="mx-auto max-w-6xl px-6 text-center">
-          <p className="mb-3 text-xs uppercase tracking-[0.3em] text-[#b88a2c]">
-            Usluge
-          </p>
-          <h2 className="mb-6 text-3xl font-semibold uppercase tracking-[0.04em] text-[#26313f] md:text-4xl">
-            Organizacija, dekoracija i pažljivo osmišljeni detalji
+      <section id="kontakt" className="bg-[#fcfaf5] py-20">
+        <div className="mx-auto max-w-4xl px-6 text-center">
+          <h2 className="mb-5 text-3xl font-semibold uppercase tracking-[0.04em] text-[#26313f] md:text-4xl">
+            Kako možemo pomoći?
           </h2>
-          <p className="mx-auto max-w-4xl text-lg leading-9 text-[#4b4b4b]">
-            Sve na jednom mestu — od planiranja koncepta i izbora prostora do
-            dekoracije, vizuelnog identiteta događaja i završne koordinacije.
+          <p className="mb-8 text-lg leading-8 text-[#4b4b4b]">
+            Pošaljite upit i zajedno ćemo osmisliti koncept vaše naredne proslave.
           </p>
-
-          <div className="mt-10">
-            <Link
-              href="/usluge"
-              className="inline-block border border-[#d8c0c6] bg-[#d8c0c6] px-10 py-4 text-sm font-semibold uppercase tracking-[0.12em] text-white transition hover:bg-[#cdaeb7] hover:border-[#cdaeb7]"
-            >
-              Pogledajte usluge
-            </Link>
-          </div>
+          <a
+            href="mailto:info@magicmoments.rs"
+            className="inline-block bg-[#d8c0c6] px-8 py-4 text-sm font-semibold uppercase tracking-[0.10em] text-white transition hover:bg-[#cdaeb7]"
+          >
+            Pošaljite upit
+          </a>
         </div>
       </section>
     </main>
