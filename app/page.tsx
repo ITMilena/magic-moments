@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Home() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -11,21 +12,21 @@ export default function Home() {
     <main className="min-h-screen bg-white text-[#222]">
       <header className="sticky top-0 z-50 border-b border-[#ece7dc] bg-white">
         <div className="mx-auto flex h-[90px] max-w-[1280px] items-center justify-between px-6 lg:px-10">
-          <a href="/" className="flex items-center">
+          <Link href="/" className="flex items-center">
             <img
               src="/Logo.jpeg"
               alt="Magic Moments"
               className="h-14 w-auto object-contain"
             />
-          </a>
+          </Link>
 
           <nav className="hidden items-center gap-7 lg:flex xl:gap-8">
-            <a
+            <Link
               href="/"
               className="text-[13px] font-semibold uppercase tracking-[0.04em] text-[#4a4a4a] transition hover:text-[#b88a2c]"
             >
               Početna
-            </a>
+            </Link>
 
             <div className="group relative">
               <button className="flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.04em] text-[#4a4a4a] transition hover:text-[#b88a2c]">
@@ -36,18 +37,18 @@ export default function Home() {
               <div className="absolute left-0 top-full h-4 w-72" />
 
               <div className="invisible absolute left-0 top-[calc(100%+4px)] z-50 min-w-[250px] border border-[#f0eadf] bg-white opacity-0 shadow-[0_6px_16px_rgba(0,0,0,0.04)] transition-all duration-150 group-hover:visible group-hover:opacity-100">
-                <a
-                  href="/usluge/organizacija-rodjendana"
+                <Link
+                  href="/usluge#organizacija-rodjendana"
                   className="block px-4 py-3 text-[13px] text-[#555] transition hover:bg-[#fcf8ef] hover:text-[#b88a2c]"
                 >
                   Organizacija rođendana
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/usluge#organizacija-dogadjaja"
                   className="block px-4 py-3 text-[13px] text-[#555] transition hover:bg-[#fcf8ef] hover:text-[#b88a2c]"
                 >
                   Organizacija događaja
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -60,47 +61,47 @@ export default function Home() {
               <div className="absolute left-0 top-full h-4 w-64" />
 
               <div className="invisible absolute left-0 top-[calc(100%+4px)] z-50 min-w-[260px] border border-[#f0eadf] bg-white opacity-0 shadow-[0_6px_16px_rgba(0,0,0,0.04)] transition-all duration-150 group-hover:visible group-hover:opacity-100">
-                <a
+                <Link
                   href="/dekoracije/rodjendan"
                   className="block px-4 py-3 text-[13px] text-[#555] transition hover:bg-[#fcf8ef] hover:text-[#b88a2c]"
                 >
                   Dekoracija rođendana
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/dekoracije/krstenje"
                   className="block px-4 py-3 text-[13px] text-[#555] transition hover:bg-[#fcf8ef] hover:text-[#b88a2c]"
                 >
                   Dekoracija krštenja
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/dekoracije/punoletstvo"
                   className="block px-4 py-3 text-[13px] text-[#555] transition hover:bg-[#fcf8ef] hover:text-[#b88a2c]"
                 >
                   Dekoracija 18. rođendana
-                </a>
+                </Link>
               </div>
             </div>
 
-            <a
+            <Link
               href="/usluge"
               className="text-[13px] font-semibold uppercase tracking-[0.04em] text-[#4a4a4a] transition hover:text-[#b88a2c]"
             >
               Usluge
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/galerija"
               className="text-[13px] font-semibold uppercase tracking-[0.04em] text-[#4a4a4a] transition hover:text-[#b88a2c]"
             >
               Galerija
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/kontakt"
               className="text-[13px] font-semibold uppercase tracking-[0.04em] text-[#4a4a4a] transition hover:text-[#b88a2c]"
             >
               Kontakt
-            </a>
+            </Link>
           </nav>
 
           <button
@@ -115,13 +116,13 @@ export default function Home() {
         {mobileOpen && (
           <div className="border-t border-[#ece7dc] bg-white px-4 py-4 lg:hidden">
             <div className="flex flex-col">
-              <a
+              <Link
                 href="/"
                 className="px-3 py-3 text-sm font-semibold uppercase text-[#444]"
                 onClick={() => setMobileOpen(false)}
               >
                 Početna
-              </a>
+              </Link>
 
               <div className="border-t border-[#f3eee3]">
                 <button
@@ -131,22 +132,23 @@ export default function Home() {
                   Organizacija
                   <span className="text-[#b88a2c]">{orgOpen ? "−" : "+"}</span>
                 </button>
+
                 {orgOpen && (
                   <div className="pb-2">
-                    <a
-                      href="/usluge/organizacija-rodjendana"
+                    <Link
+                      href="/usluge#organizacija-rodjendana"
                       className="block px-5 py-2 text-sm text-[#555]"
                       onClick={() => setMobileOpen(false)}
                     >
                       Organizacija rođendana
-                    </a>
-                    <a
-                      href="/usluge/organizacija-dogadjaja"
+                    </Link>
+                    <Link
+                      href="/usluge#organizacija-dogadjaja"
                       className="block px-5 py-2 text-sm text-[#555]"
                       onClick={() => setMobileOpen(false)}
                     >
                       Organizacija događaja
-                    </a>
+                    </Link>
                   </div>
                 )}
               </div>
@@ -159,56 +161,57 @@ export default function Home() {
                   Dekoracija
                   <span className="text-[#b88a2c]">{dekorOpen ? "−" : "+"}</span>
                 </button>
+
                 {dekorOpen && (
                   <div className="pb-2">
-                    <a
+                    <Link
                       href="/dekoracije/rodjendan"
                       className="block px-5 py-2 text-sm text-[#555]"
                       onClick={() => setMobileOpen(false)}
                     >
                       Dekoracija rođendana
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href="/dekoracije/krstenje"
                       className="block px-5 py-2 text-sm text-[#555]"
                       onClick={() => setMobileOpen(false)}
                     >
                       Dekoracija krštenja
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       href="/dekoracije/punoletstvo"
                       className="block px-5 py-2 text-sm text-[#555]"
                       onClick={() => setMobileOpen(false)}
                     >
                       Dekoracija 18. rođendana
-                    </a>
+                    </Link>
                   </div>
                 )}
               </div>
 
-              <a
+              <Link
                 href="/usluge"
                 className="border-t border-[#f3eee3] px-3 py-3 text-sm font-semibold uppercase text-[#444]"
                 onClick={() => setMobileOpen(false)}
               >
                 Usluge
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href="/galerija"
                 className="border-t border-[#f3eee3] px-3 py-3 text-sm font-semibold uppercase text-[#444]"
                 onClick={() => setMobileOpen(false)}
               >
                 Galerija
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href="/kontakt"
                 className="border-t border-[#f3eee3] px-3 py-3 text-sm font-semibold uppercase text-[#444]"
                 onClick={() => setMobileOpen(false)}
               >
                 Kontakt
-              </a>
+              </Link>
             </div>
           </div>
         )}
@@ -232,12 +235,12 @@ export default function Home() {
             elegantnu dekoraciju i atmosferu koja se pamti.
           </p>
 
-          <a
+          <Link
             href="/kontakt"
             className="inline-block bg-[#d8c0c6] px-8 py-4 text-sm font-semibold uppercase tracking-[0.10em] text-white transition hover:bg-[#cdaeb7]"
           >
             Kontaktirajte nas
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -264,12 +267,12 @@ export default function Home() {
             sve na jednom mestu, sa elegantnim pristupom i jasnim planom.
           </p>
 
-          <a
+          <Link
             href="/usluge"
             className="mt-8 inline-block bg-[#d8c0c6] px-8 py-4 text-sm font-semibold uppercase tracking-[0.10em] text-white transition hover:bg-[#cdaeb7]"
           >
             Pogledajte usluge
-          </a>
+          </Link>
         </div>
       </section>
     </main>
