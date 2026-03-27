@@ -81,13 +81,13 @@ export default function RootLayout({
                     Organizacija krštenja
                   </Link>
                   <Link
-                    href="/organizacija/18-rodjendan"
+                    href="/organizacija/punoletstvo"
                     className="block border-b border-[#f5eee4] px-5 py-4 text-[15px] text-[#555] transition hover:bg-[#fcf8f0] hover:text-[#b88a2c]"
                   >
                     Organizacija 18. rođendana
                   </Link>
                   <Link
-                    href="/organizacija/momacko-devojacko"
+                    href="/organizacija/momacke-i-devojacke-veceri"
                     className="block border-b border-[#f5eee4] px-5 py-4 text-[15px] text-[#555] transition hover:bg-[#fcf8f0] hover:text-[#b88a2c]"
                   >
                     Momačke i devojačke večeri
