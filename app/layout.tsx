@@ -116,6 +116,13 @@ export default function RootLayout({
               </Link>
 
               <Link
+                href="/galerija"
+                className="text-[13px] font-semibold uppercase tracking-[0.08em] text-[#2f343b] transition hover:text-[#b88a2c]"
+              >
+                Galerija
+              </Link>
+
+              <Link
                 href="/kontakt"
                 className="text-[13px] font-semibold uppercase tracking-[0.08em] text-[#2f343b] transition hover:text-[#b88a2c]"
               >
@@ -217,6 +224,14 @@ export default function RootLayout({
                   onClick={() => setMobileOpen(false)}
                 >
                   Usluge
+                </Link>
+
+                <Link
+                  href="/galerija"
+                  className="border-t border-[#f1ebe2] px-3 py-3 text-sm font-semibold uppercase text-[#2f343b]"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Galerija
                 </Link>
 
                 <Link
