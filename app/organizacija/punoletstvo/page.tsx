@@ -29,7 +29,7 @@ export default function PunoletstvoPage() {
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/punoletstvo-dekoracija1.jpg"
+            src="/punoletstvo-galerija-1.jpg"
             alt="Organizacija 18. rođendana"
             className="h-full w-full object-cover"
           />
