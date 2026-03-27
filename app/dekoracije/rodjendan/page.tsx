@@ -302,7 +302,7 @@ export default function RodjendanPage() {
               className="h-[260px] w-full object-cover md:h-[420px]"
             />
             <img
-              src="/punoletstva-galerija-2.jpg"
+              src="/punoletstvo-galerija-2.jpg"
               alt="Galerija rođendanske dekoracije 2"
               className="h-[260px] w-full object-cover md:h-[420px]"
             />
