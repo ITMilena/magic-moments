@@ -68,7 +68,7 @@ export default function Home() {
                 Dekoracija
               </p>
               <h3 className="mb-5 text-3xl font-semibold uppercase tracking-[0.04em] text-[#26313f]">
-                Zlatno-beli, nežni i elegantni vajb
+                Po vašem ukusu, nežni i elegantni vajb
               </h3>
               <p className="leading-8 text-[#555]">
                 Dekoracijom stvaramo atmosferu događaja. Kroz pažljivo birane boje,
