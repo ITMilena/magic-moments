@@ -29,7 +29,7 @@ export default function PrviRodjendanPage() {
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/event1.jpg"
+            src="/event1.jpeg"
             alt="Organizacija prvog rođendana"
             className="h-full w-full object-cover"
           />
@@ -131,7 +131,7 @@ export default function PrviRodjendanPage() {
             <div className="grid gap-5 sm:grid-cols-2">
               <div className="overflow-hidden rounded-[28px] border border-[#eadfca] bg-white shadow-sm">
                 <img
-                  src="/event2.jpg"
+                  src="/event2.jpeg"
                   alt="Dekoracija prvog rođendana"
                   className="h-[260px] w-full object-cover"
                 />
@@ -139,7 +139,7 @@ export default function PrviRodjendanPage() {
 
               <div className="overflow-hidden rounded-[28px] border border-[#eadfca] bg-white shadow-sm sm:translate-y-10">
                 <img
-                  src="/event3.jpg"
+                  src="/event3.jpeg"
                   alt="Detalji sa proslave prvog rođendana"
                   className="h-[260px] w-full object-cover"
                 />
@@ -225,7 +225,7 @@ export default function PrviRodjendanPage() {
 
           <div className="overflow-hidden rounded-[30px] border border-white/10 bg-white/10 p-3 backdrop-blur-sm">
             <img
-              src="/dekoracija1.jpg"
+              src="/dekoracija1.jpeg"
               alt="Proslava prvog rođendana"
               className="h-[360px] w-full rounded-[24px] object-cover"
             />
