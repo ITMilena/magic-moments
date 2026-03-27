@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 export default function MomackeIDevojackeVeceriPage() {
   const services = [
     "Planiranje i koordinacija događaja",
@@ -58,19 +59,19 @@ export default function MomackeIDevojackeVeceriPage() {
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
-              <a
+              <Link
                 href="/kontakt"
                 className="inline-flex items-center justify-center rounded-full bg-[#c9a75d] px-7 py-4 text-[13px] font-semibold uppercase tracking-[0.08em] text-white transition hover:bg-[#b88a2c]"
               >
                 Pošaljite upit
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href="/galerija"
                 className="inline-flex items-center justify-center rounded-full border border-white/40 px-7 py-4 text-[13px] font-semibold uppercase tracking-[0.08em] text-white transition hover:bg-white/10"
               >
                 Pogledajte galeriju
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -253,19 +254,19 @@ export default function MomackeIDevojackeVeceriPage() {
           </p>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-            <a
+            <Link
               href="/kontakt"
               className="inline-flex items-center justify-center rounded-full bg-[#c9a75d] px-8 py-4 text-[13px] font-semibold uppercase tracking-[0.08em] text-white transition hover:bg-[#b88a2c]"
             >
               Kontaktirajte nas
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/galerija"
               className="inline-flex items-center justify-center rounded-full border border-[#d9c8a9] px-8 py-4 text-[13px] font-semibold uppercase tracking-[0.08em] text-[#26313f] transition hover:bg-white"
             >
               Pogledajte galeriju
-            </a>
+            </Link>
           </div>
         </div>
       </section>
