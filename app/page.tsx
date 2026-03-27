@@ -29,7 +29,10 @@ export default function Home() {
             </Link>
 
             <div className="group relative">
-              <button className="flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.04em] text-[#4a4a4a] transition hover:text-[#b88a2c]">
+              <button
+                type="button"
+                className="flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.04em] text-[#4a4a4a] transition hover:text-[#b88a2c]"
+              >
                 Organizacija
                 <span className="text-[11px] text-[#b88a2c]">›</span>
               </button>
@@ -53,7 +56,10 @@ export default function Home() {
             </div>
 
             <div className="group relative">
-              <button className="flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.04em] text-[#4a4a4a] transition hover:text-[#b88a2c]">
+              <button
+                type="button"
+                className="flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.04em] text-[#4a4a4a] transition hover:text-[#b88a2c]"
+              >
                 Dekoracija
                 <span className="text-[11px] text-[#b88a2c]">›</span>
               </button>
@@ -77,7 +83,7 @@ export default function Home() {
                   href="/dekoracije/punoletstvo"
                   className="block px-4 py-3 text-[13px] text-[#555] transition hover:bg-[#fcf8ef] hover:text-[#b88a2c]"
                 >
-                  Dekoracija 18. rođendana
+                  Elegantne event dekoracije
                 </Link>
               </div>
             </div>
@@ -108,6 +114,7 @@ export default function Home() {
             onClick={() => setMobileOpen(!mobileOpen)}
             className="flex h-10 w-10 items-center justify-center border border-[#e7deca] text-[#444] lg:hidden"
             aria-label="Otvori meni"
+            type="button"
           >
             {mobileOpen ? "✕" : "☰"}
           </button>
@@ -128,6 +135,7 @@ export default function Home() {
                 <button
                   onClick={() => setOrgOpen(!orgOpen)}
                   className="flex w-full items-center justify-between px-3 py-3 text-left text-sm font-semibold uppercase text-[#444]"
+                  type="button"
                 >
                   Organizacija
                   <span className="text-[#b88a2c]">{orgOpen ? "−" : "+"}</span>
@@ -157,6 +165,7 @@ export default function Home() {
                 <button
                   onClick={() => setDekorOpen(!dekorOpen)}
                   className="flex w-full items-center justify-between px-3 py-3 text-left text-sm font-semibold uppercase text-[#444]"
+                  type="button"
                 >
                   Dekoracija
                   <span className="text-[#b88a2c]">{dekorOpen ? "−" : "+"}</span>
@@ -183,7 +192,7 @@ export default function Home() {
                       className="block px-5 py-2 text-sm text-[#555]"
                       onClick={() => setMobileOpen(false)}
                     >
-                      Dekoracija 18. rođendana
+                      Elegantne event dekoracije
                     </Link>
                   </div>
                 )}
