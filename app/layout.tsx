@@ -1,5 +1,8 @@
+"use client";
+
 import type { Metadata } from "next";
 import Link from "next/link";
+import { useState } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -23,6 +26,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [orgOpen, setOrgOpen] = useState(false);
+  const [dekorOpen, setDekorOpen] = useState(false);
+
   return (
     <html
       lang="sr"
@@ -115,38 +122,122 @@ export default function RootLayout({
               </Link>
 
               <Link
-                href="/galerija"
-                className="text-[13px] font-semibold uppercase tracking-[0.08em] text-[#2f343b] transition hover:text-[#b88a2c]"
-              >
-                Galerija
-              </Link>
-
-              <Link
                 href="/kontakt"
                 className="text-[13px] font-semibold uppercase tracking-[0.08em] text-[#2f343b] transition hover:text-[#b88a2c]"
               >
                 Kontakt
               </Link>
             </nav>
+
+            <button
+              type="button"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              className="flex h-10 w-10 items-center justify-center text-[#2f343b] lg:hidden"
+              aria-label="Otvori meni"
+            >
+              {mobileOpen ? "✕" : "☰"}
+            </button>
           </div>
+
+          {mobileOpen && (
+            <div className="border-t border-[#ece3d8] bg-white px-4 py-4 lg:hidden">
+              <div className="flex flex-col">
+                <Link
+                  href="/"
+                  className="px-3 py-3 text-sm font-semibold uppercase text-[#2f343b]"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Početna
+                </Link>
+
+                <div className="border-t border-[#f1ebe2]">
+                  <button
+                    type="button"
+                    onClick={() => setOrgOpen(!orgOpen)}
+                    className="flex w-full items-center justify-between px-3 py-3 text-left text-sm font-semibold uppercase text-[#2f343b]"
+                  >
+                    Organizacija
+                    <span className="text-[#b88a2c]">{orgOpen ? "−" : "+"}</span>
+                  </button>
+
+                  {orgOpen && (
+                    <div className="pb-2">
+                      <Link
+                        href="/usluge#organizacija-rodjendana"
+                        className="block px-5 py-2 text-sm text-[#555]"
+                        onClick={() => setMobileOpen(false)}
+                      >
+                        Organizacija rođendana
+                      </Link>
+                      <Link
+                        href="/usluge#organizacija-dogadjaja"
+                        className="block px-5 py-2 text-sm text-[#555]"
+                        onClick={() => setMobileOpen(false)}
+                      >
+                        Organizacija događaja
+                      </Link>
+                    </div>
+                  )}
+                </div>
+
+                <div className="border-t border-[#f1ebe2]">
+                  <button
+                    type="button"
+                    onClick={() => setDekorOpen(!dekorOpen)}
+                    className="flex w-full items-center justify-between px-3 py-3 text-left text-sm font-semibold uppercase text-[#2f343b]"
+                  >
+                    Dekoracija
+                    <span className="text-[#b88a2c]">{dekorOpen ? "−" : "+"}</span>
+                  </button>
+
+                  {dekorOpen && (
+                    <div className="pb-2">
+                      <Link
+                        href="/dekoracije/krstenje"
+                        className="block px-5 py-2 text-sm text-[#555]"
+                        onClick={() => setMobileOpen(false)}
+                      >
+                        Dekoracija krštenja
+                      </Link>
+                      <Link
+                        href="/dekoracije/rodjendan"
+                        className="block px-5 py-2 text-sm text-[#555]"
+                        onClick={() => setMobileOpen(false)}
+                      >
+                        Dekoracija rođendana
+                      </Link>
+                      <Link
+                        href="/dekoracije/punoletstvo"
+                        className="block px-5 py-2 text-sm text-[#555]"
+                        onClick={() => setMobileOpen(false)}
+                      >
+                        Dekoracija 18. rođendana
+                      </Link>
+                    </div>
+                  )}
+                </div>
+
+                <Link
+                  href="/usluge"
+                  className="border-t border-[#f1ebe2] px-3 py-3 text-sm font-semibold uppercase text-[#2f343b]"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Usluge
+                </Link>
+
+                <Link
+                  href="/kontakt"
+                  className="border-t border-[#f1ebe2] px-3 py-3 text-sm font-semibold uppercase text-[#2f343b]"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  Kontakt
+                </Link>
+              </div>
+            </div>
+          )}
         </header>
 
         {children}
-
-        <footer className="border-t border-[#e9e1d5] bg-white py-8 text-center text-sm text-[#6f5a57]">
-          <div className="space-y-2">
-            <p className="font-medium text-[#3d2c2a]">Magic Moments</p>
-            <p>Sajt radio – Milena Živković</p>
-            <p>
-              <a href="tel:+381601938373" className="hover:underline">
-                060 / 193 - 83 - 73
-              </a>
-            </p>
-            <p className="pt-2 text-xs text-[#9c7c5b]">
-              © {new Date().getFullYear()} Sva prava zadržana
-            </p>
-          </div>
-        </footer>
       </body>
     </html>
   );
