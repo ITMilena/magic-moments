@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import Link from "next/link";
 
 type Category = "Sve" | "Bendovi" | "Sale" | "Dekoracije";
 
@@ -39,45 +38,6 @@ export default function GalerijaPage() {
 
   return (
     <main className="min-h-screen bg-[#fdfbf7] text-[#2f2a24]">
-      <header className="sticky top-0 z-50 border-b border-[#eadfca] bg-white">
-        <div className="mx-auto flex h-[90px] max-w-[1280px] items-center justify-between px-6 lg:px-10">
-          <Link href="/" className="flex items-center">
-            <img
-              src="/Logo.jpeg"
-              alt="Magic Moments"
-              className="h-14 w-auto object-contain"
-            />
-          </Link>
-
-          <nav className="hidden items-center gap-7 lg:flex">
-            <Link
-              href="/"
-              className="text-[13px] font-semibold uppercase tracking-[0.05em] text-[#4a4a4a] transition hover:text-[#b88a2c]"
-            >
-              Početna
-            </Link>
-            <Link
-              href="/#usluge"
-              className="text-[13px] font-semibold uppercase tracking-[0.05em] text-[#4a4a4a] transition hover:text-[#b88a2c]"
-            >
-              Usluge
-            </Link>
-            <Link
-              href="/galerija"
-              className="text-[13px] font-semibold uppercase tracking-[0.05em] text-[#b88a2c]"
-            >
-              Galerija
-            </Link>
-            <Link
-              href="/#kontakt"
-              className="text-[13px] font-semibold uppercase tracking-[0.05em] text-[#4a4a4a] transition hover:text-[#b88a2c]"
-            >
-              Kontakt
-            </Link>
-          </nav>
-        </div>
-      </header>
-
       <section className="border-b border-[#eadfca] bg-[#fbf8f2] px-6 py-16 md:py-20">
         <div className="mx-auto max-w-7xl text-center">
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.28em] text-[#b88a2c]">
@@ -104,9 +64,10 @@ export default function GalerijaPage() {
               return (
                 <button
                   key={category}
+                  type="button"
                   onClick={() => setActiveCategory(category)}
                   className={[
-                    "px-6 py-5 text-center text-lg font-semibold uppercase tracking-[0.04em] transition",
+                    "w-full px-6 py-5 text-center text-lg font-semibold uppercase tracking-[0.04em] transition",
                     index !== categories.length - 1
                       ? "border-b border-[#efe5d1] md:border-b-0 md:border-r md:border-r-[#e6d8b8]"
                       : "",
