@@ -37,7 +37,7 @@ export default function Home() {
 
               <div className="invisible absolute left-0 top-[calc(100%+4px)] z-50 min-w-[250px] border border-[#f0eadf] bg-white opacity-0 shadow-[0_6px_16px_rgba(0,0,0,0.04)] transition-all duration-150 group-hover:visible group-hover:opacity-100">
                 <a
-                  href="/usluge#organizacija-rodjendana"
+                  href="/usluge/organizacija-rodjendana"
                   className="block px-4 py-3 text-[13px] text-[#555] transition hover:bg-[#fcf8ef] hover:text-[#b88a2c]"
                 >
                   Organizacija rođendana
@@ -134,14 +134,14 @@ export default function Home() {
                 {orgOpen && (
                   <div className="pb-2">
                     <a
-                      href="/usluge#organizacija-rodjendana"
+                      href="/usluge/organizacija-rodjendana"
                       className="block px-5 py-2 text-sm text-[#555]"
                       onClick={() => setMobileOpen(false)}
                     >
                       Organizacija rođendana
                     </a>
                     <a
-                      href="/usluge#organizacija-dogadjaja"
+                      href="/usluge/organizacija-dogadjaja"
                       className="block px-5 py-2 text-sm text-[#555]"
                       onClick={() => setMobileOpen(false)}
                     >
