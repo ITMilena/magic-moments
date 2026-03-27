@@ -155,10 +155,10 @@ export default function RootLayout({
                   <span className="text-[11px] text-[#b88a2c]">›</span>
                 </button>
 
-                <div className="absolute left-1/2 top-full h-4 w-[860px] -translate-x-1/2" />
+                <div className="absolute right-0 top-full h-4 w-[640px]" />
 
-                <div className="invisible absolute left-1/2 top-[calc(100%+4px)] z-50 w-[860px] -translate-x-1/2 border border-[#ece3d8] bg-white opacity-0 shadow-[0_10px_25px_rgba(0,0,0,0.06)] transition-all duration-150 group-hover:visible group-hover:opacity-100">
-                  <div className="grid grid-cols-3">
+                <div className="invisible absolute right-0 top-[calc(100%+4px)] z-50 w-[640px] border border-[#ece3d8] bg-white opacity-0 shadow-[0_10px_25px_rgba(0,0,0,0.06)] transition-all duration-150 group-hover:visible group-hover:opacity-100">
+                  <div className="grid grid-cols-2">
                     <div className="border-r border-[#f1ebe2] p-6">
                       <p className="mb-4 text-xs font-semibold uppercase tracking-[0.12em] text-[#b88a2c]">
                         Organizacija događaja
@@ -183,21 +183,21 @@ export default function RootLayout({
                         >
                           Organizacija muzičkog programa
                         </Link>
-                      </div>
-                    </div>
-
-                    <div className="border-r border-[#f1ebe2] p-6">
-                      <p className="mb-4 text-xs font-semibold uppercase tracking-[0.12em] text-[#b88a2c]">
-                        Prostor i dekoracija
-                      </p>
-
-                      <div className="flex flex-col">
                         <Link
                           href="/usluge#dizajn-dekoracija"
                           className="py-2 text-[15px] text-[#444] transition hover:text-[#b88a2c]"
                         >
                           Dizajn i dekoracija prostora
                         </Link>
+                      </div>
+                    </div>
+
+                    <div className="p-6">
+                      <p className="mb-4 text-xs font-semibold uppercase tracking-[0.12em] text-[#b88a2c]">
+                        Dodatne usluge
+                      </p>
+
+                      <div className="flex flex-col">
                         <Link
                           href="/usluge#ketering"
                           className="py-2 text-[15px] text-[#444] transition hover:text-[#b88a2c]"
@@ -210,15 +210,6 @@ export default function RootLayout({
                         >
                           Animatori za decu
                         </Link>
-                      </div>
-                    </div>
-
-                    <div className="p-6">
-                      <p className="mb-4 text-xs font-semibold uppercase tracking-[0.12em] text-[#b88a2c]">
-                        Foto i video
-                      </p>
-
-                      <div className="flex flex-col">
                         <Link
                           href="/usluge#foto-video"
                           className="py-2 text-[15px] text-[#444] transition hover:text-[#b88a2c]"
@@ -308,14 +299,14 @@ export default function RootLayout({
                         Organizacija krštenja
                       </Link>
                       <Link
-                        href="/organizacija/18-rodjendan"
+                        href="/organizacija/punoletstvo"
                         className="block px-5 py-2 text-sm text-[#555]"
                         onClick={closeMobileMenu}
                       >
                         Organizacija 18. rođendana
                       </Link>
                       <Link
-                        href="/organizacija/momacko-devojacko"
+                        href="/organizacija/momacke-i-devojacke-veceri"
                         className="block px-5 py-2 text-sm text-[#555]"
                         onClick={closeMobileMenu}
                       >
