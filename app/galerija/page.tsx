@@ -13,8 +13,8 @@ const dekoracijeSlike = [
   { src: "/event2.jpg", alt: "Event 2" },
   { src: "/event3.jpg", alt: "Event 3" },
 
-  { src: "/iznenadjenje2.jpeg", alt: "Iznenađenje 2" },
-  { src: "/iznenadjenje3.jpeg", alt: "Iznenađenje 3" },
+  { src: "/iznenadjenje2.jpg", alt: "Iznenađenje 2" },
+  { src: "/iznenadjenje3.jpg", alt: "Iznenađenje 3" },
 
   { src: "/krstenje1.jpeg", alt: "Krštenje 1" },
   { src: "/krstenje2.jpeg", alt: "Krštenje 2" },
