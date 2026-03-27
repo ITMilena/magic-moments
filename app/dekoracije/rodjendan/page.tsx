@@ -297,12 +297,12 @@ export default function RodjendanPage() {
 
           <div className="grid gap-6 md:grid-cols-2">
             <img
-              src="/rodjendan-galerija-1.jpg"
+              src="/punoletstvo-galerija-1.jpg"
               alt="Galerija rođendanske dekoracije 1"
               className="h-[260px] w-full object-cover md:h-[420px]"
             />
             <img
-              src="/rodjendan-galerija-2.jpg"
+              src="/punoletstva-galerija-2.jpg"
               alt="Galerija rođendanske dekoracije 2"
               className="h-[260px] w-full object-cover md:h-[420px]"
             />
