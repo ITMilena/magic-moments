@@ -137,7 +137,7 @@ export default function PrviRodjendanPage() {
       <section className="relative">
         <div className="absolute inset-0 bg-black/30" />
         <img
-          src="/dekoracija10.jpg"
+          src="/dekoracija10.jpeg"
           alt="Dekoracije za prvi rođendan"
           className="h-[240px] w-full object-cover md:h-[360px]"
         />
