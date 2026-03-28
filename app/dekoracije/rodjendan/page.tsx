@@ -125,7 +125,7 @@ export default function RodjendanPage() {
       <section className="relative">
         <div className="absolute inset-0 bg-black/30" />
         <img
-          src="/punoletstvo-hero.jpg"
+          src="/momacko3.jpeg"
           alt="Dekoracija rođendana"
           className="h-[240px] w-full object-cover md:h-[360px]"
         />
