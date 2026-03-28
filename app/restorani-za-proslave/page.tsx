@@ -39,7 +39,7 @@ const venues = [
     title: "GALEA SALA",
     description:
       "Galea sala je odličan izbor za različite vrste proslava u Somboru. Prostor je pogodan za veće događaje, a može biti praktično rešenje kada vam je važan veći kapacitet i organizacija u svečanoj sali.",
-    price: "18 - 33 €",
+    price: "Na upit",
     capacity: "do 350 osoba",
     location: "Filipa Kljajića bb, Sombor",
     images: [
@@ -55,7 +55,7 @@ const venues = [
     title: "SVEČANA SALA 025",
     description:
       "Svečana sala 025 je prostor sa dugom tradicijom i namenjena je za različite vrste proslava. Dobar je izbor kada vam treba fleksibilan prostor za manji ili srednji broj gostiju.",
-    price: "17 - 23 €",
+    price: "Na upit",
     capacity: "30 - 220 osoba",
     location: "Centrala 31a, Sombor",
     images: [
@@ -71,7 +71,7 @@ const venues = [
     title: "VILA TAMARA",
     description:
       "Vila Tamara je praktična opcija za proslave različitog tipa i kapaciteta. Pogodna je kada želite prostor koji može da odgovori i manjim i većim okupljanjima.",
-    price: "11 - 22 €",
+    price: "Na upit",
     capacity: "25 - 200 osoba",
     location: "Apatinski put bb, Sombor",
     images: [
@@ -87,7 +87,7 @@ const venues = [
     title: "ETNO RESTORAN FIJAKER",
     description:
       "Etno restoran Fijaker nalazi se u Somboru i poznat je po prepoznatljivom ambijentu i velikom kapacitetu. Može biti dobar izbor za porodične i svečane proslave kada želite topao i tradicionalniji utisak.",
-    price: "Po dogovoru",
+    price: "Na upit",
     capacity: "do 220 osoba",
     location: "Sonje Marinković bb, Park Heroja, Sombor",
     images: [
@@ -103,7 +103,7 @@ const venues = [
     title: "RESTORAN SLON",
     description:
       "Restoran Slon je dobar izbor za manje i srednje proslave. Prednost ovog prostora je što može da odgovori fleksibilnijem broju gostiju, u zavisnosti od formata događaja.",
-    price: "5 - 20 €",
+    price: "Na upit",
     capacity: "50 - 140 osoba",
     location: "Venac Petrove Gore bb, Sombor",
     images: [
@@ -119,7 +119,7 @@ const venues = [
     title: "RESTORAN STARI SLON",
     description:
       "Restoran Stari Slon nalazi se u centru Sombora i pogodan je za intimnije proslave i okupljanja manjeg obima. Praktičan je kada želite centralnu lokaciju i mirniji ambijent.",
-    price: "16 - 40 €",
+    price: "Na upit",
     capacity: "10 - 60 osoba",
     location: "Venac Radomira Putnika 21, Sombor",
     images: [
