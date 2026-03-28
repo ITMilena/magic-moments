@@ -173,7 +173,7 @@ export default function DekoracijePage() {
       <section className="relative">
         <div className="absolute inset-0 bg-black/30" />
         <img
-          src="/Dekoracija10.jpg"
+          src="/dekoracija10.jpg"
           alt="Dekoracije za proslave"
           className="h-[240px] w-full object-cover md:h-[360px]"
         />
@@ -269,7 +269,7 @@ export default function DekoracijePage() {
       <section className="bg-[#edf1f3]">
         <div className="mx-auto max-w-6xl">
           <img
-            src="/Dekoracija1.jpg"
+            src="/dekoracija1.jpg"
             alt="Elegantna dekoracija za proslave"
             className="h-[320px] w-full object-cover md:h-[520px]"
           />
@@ -325,7 +325,7 @@ export default function DekoracijePage() {
 
         <div className="mx-auto max-w-6xl">
           <img
-            src="/Event2.jpeg"
+            src="/event2.jpeg"
             alt="Dekoracija prostora za proslavu"
             className="h-[320px] w-full object-cover md:h-[520px]"
           />
@@ -363,12 +363,12 @@ export default function DekoracijePage() {
 
           <div className="grid gap-6 md:grid-cols-2">
             <img
-              src="/Iznenadjenje2.jpg"
+              src="/iznenadjenje2.jpg"
               alt="Galerija dekoracije 1"
               className="h-[260px] w-full object-cover md:h-[420px]"
             />
             <img
-              src="/Dekoracija3.jpg"
+              src="/dekoracija3.jpg"
               alt="Galerija dekoracije 2"
               className="h-[260px] w-full object-cover md:h-[420px]"
             />
@@ -390,7 +390,7 @@ export default function DekoracijePage() {
           <TitleBlock title="Saveti za dekoraciju proslava" />
 
           <img
-            src="/Dekoracija3.jpg"
+            src="/dekoracija3.jpg"
             alt="Saveti za dekoraciju proslava"
             className="mx-auto h-[300px] w-full max-w-4xl object-cover md:h-[520px]"
           />
