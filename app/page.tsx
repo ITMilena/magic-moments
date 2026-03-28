@@ -99,7 +99,7 @@ export default function Home() {
               </h3>
               <p className="mb-5 text-lg leading-9 text-[#4b4b4b]">
                 Inspiraciju gradimo kroz miran luksuzan stil, čiste linije i pažljivo
-                osmišljene detalje. Želimo da sajt, kao i događaji koje radite,
+                osmišljene detalje. Želimo da svi događaji koje radite,
                 deluje ozbiljno, elegantno i profesionalno.
               </p>
               <p className="text-lg leading-9 text-[#4b4b4b]">
