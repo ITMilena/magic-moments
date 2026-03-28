@@ -153,7 +153,7 @@ export default function PrviRodjendanPage() {
           <p
             className={`${headingSerif.className} mx-auto max-w-3xl text-[30px] leading-[1.75] text-[#4b4d54] md:text-[48px]`}
           >
-            Bez obzira da li prvi rođendan proslavljate u restoranu, sali ili u
+            Bez obzira da li prvi rođendan organizujete u restoranu, sali ili u
             privatnom prostoru, dekoracija je ono što daje poseban ton celoj
             proslavi i ostavlja utisak koji se pamti.
           </p>
@@ -166,15 +166,14 @@ export default function PrviRodjendanPage() {
 
           <div className="mx-auto mt-10 max-w-4xl space-y-8 text-[25px] leading-[1.8] text-[#474a51] md:text-[30px]">
             <p>
-              Prvi rođendan je jedan od najlepših i najemotivnijih trenutaka za
-              celu porodicu, a sigurni smo da želite da se{" "}
-              <strong>vaša proslava bar malo razlikuje od ostalih.</strong>
-              Jedan od najboljih načina da ovaj poseban dan ostane upamćen jeste
-              pažljivo osmišljena i elegantna dekoracija.
+              Prvi rođendan je poseban i emotivan događaj, a sigurni smo da želite
+              da se <strong>vaša proslava bar malo razlikuje od ostalih.</strong>
+              Jedan od najboljih načina da se izdvojite i da ovaj važan dan ostane
+              upamćen jeste pažljivo osmišljena i elegantna dekoracija.
             </p>
 
             <p>
-              Imamo mnogo ideja i iskustva sa dekorisanjem rođendana, tako da u
+              Imamo mnogo ideja i iskustva sa dekorisanjem proslava, tako da u
               kombinaciji sa vašim željama možemo napraviti nešto posebno,
               upečatljivo i estetski usklađeno. U okviru vašeg budžeta trudićemo se
               da dobijete maksimalan efekat i mnogo više detalja nego što biste sami
@@ -192,7 +191,7 @@ export default function PrviRodjendanPage() {
             <p>
               Svaki prvi rođendan je jedinstven, zato uvek{" "}
               <strong>kreiramo personalizovane ponude</strong>{" "}
-              po meri slavljenika i njegove porodice. U obzir uzimamo prostor,
+              po meri vaše proslave. U obzir uzimamo prostor,
               stil koji volite, vaše omiljene boje i atmosferu koju želite da postignete.
             </p>
 
@@ -247,7 +246,7 @@ export default function PrviRodjendanPage() {
               <p>
                 Velika prednost je što naš tim pored same izrade može pomoći
                 savetima i konkretnim predlozima, kako bi dekoracija delovala nežno,
-                moderno i potpuno prilagođeno prostoru i slavljeniku.
+                svečano i potpuno prilagođeno prostoru i samoj proslavi.
               </p>
             </div>
           </div>
@@ -262,9 +261,9 @@ export default function PrviRodjendanPage() {
 
           <div className="mt-10 max-w-4xl space-y-8 text-[24px] leading-[1.8] text-[#4a4d54] md:text-[29px]">
             <p>
-              Kada je u pitanju dekoracija, devojčice su najčešće zahtevnije, što je
-              potpuno razumljivo. Kod devojčica uglavnom{" "}
+              Kada je u pitanju dekoracija, često{" "}
               <strong>dominiraju cvetni aranžmani, baloni različitih oblika i nežne nijanse boja.</strong>
+              Sve to zajedno može dati posebno topao, elegantan i svečan izgled proslave.
             </p>
 
             <p>
@@ -289,7 +288,7 @@ export default function PrviRodjendanPage() {
         <div className="mx-auto max-w-5xl text-center">
           <TitleBlock
             title="Proces saradnje sa timom Magic Moments"
-            subtitle="Iza svake uspešne i jedinstvene dekoracije postoji proces detaljne pripreme. Nakon velikog broja dekorisanih rođendana iza nas, shvatili smo da je priprema više od pola obavljenog posla."
+            subtitle="Iza svake uspešne i jedinstvene dekoracije postoji proces detaljne pripreme. Nakon velikog broja dekorisanih proslava iza nas, shvatili smo da je priprema više od pola obavljenog posla."
           />
 
           <div className="mt-16 grid gap-16 md:grid-cols-2">
