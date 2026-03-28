@@ -143,7 +143,7 @@ export default function MomackeIDevojackeVeceriPage() {
 
               <div className="overflow-hidden rounded-[28px] border border-[#eadfca] bg-white shadow-sm sm:translate-y-10">
                 <img
-                  src="/momacko3.jpg"
+                  src="/momacko3.jpeg"
                   alt="Detalji sa momačke i devojačke večeri"
                   className="h-[260px] w-full object-cover"
                 />

@@ -112,11 +112,11 @@ function TitleBlock({ title, subtitle }: { title: string; subtitle?: string }) {
         {title}
       </h2>
       <Divider />
-      {subtitle ? (
+      {subtitle && (
         <p className={`${headingSerif.className} mx-auto mt-8 max-w-4xl text-[28px] italic leading-[1.75] text-[#77707a] md:text-[40px]`}>
           {subtitle}
         </p>
-      ) : null}
+      )}
     </div>
   );
 }
@@ -128,7 +128,7 @@ export default function PrviRodjendanPage() {
       {/* HERO */}
       <section className="relative">
         <div className="absolute inset-0 bg-black/30" />
-        <img src="/event2.jpeg" alt="Dekoracije za prvi rođendan" className="h-[240px] w-full object-cover md:h-[360px]" />
+        <img src="/rodjendan1.jpeg" alt="Dekoracije za prvi rođendan" className="h-[240px] w-full object-cover md:h-[360px]" />
         <div className="absolute inset-0 flex items-center justify-center px-6 text-center">
           <h1 className="max-w-4xl text-3xl font-semibold uppercase tracking-[0.1em] text-white md:text-5xl">
             Dekoracije za prvi rođendan
@@ -139,24 +139,38 @@ export default function PrviRodjendanPage() {
       {/* UVOD */}
       <section className="px-6 py-16 md:py-24 text-center">
         <p className={`${headingSerif.className} mx-auto max-w-3xl text-[30px] leading-[1.75] md:text-[48px]`}>
-          Prvi rođendan je poseban trenutak za celu porodicu i uspomena koja se pamti zauvek. Dekoracija daje toplinu, nežnost i čini ovaj dan još lepšim.
+          Prvi rođendan je poseban trenutak za celu porodicu i uspomena koja se pamti zauvek.
+          Dekoracija daje toplinu, nežnost i čini ovaj dan još lepšim.
         </p>
       </section>
 
       {/* TEKST */}
       <section className="px-6 pb-16 md:pb-24">
-        <div className="mx-auto max-w-4xl space-y-8 text-[24px] leading-[1.8] md:text-[30px]">
+        <div className="mx-auto max-w-4xl space-y-8 text-[25px] leading-[1.8] md:text-[30px]">
           <p>
-            Prvi rođendan vašeg deteta je jedan od najvažnijih događaja u životu porodice. Zato je važno da svaki detalj bude pažljivo osmišljen.
+            Prvi rođendan vašeg deteta je jedan od najvažnijih događaja u životu porodice.
+            Zato je važno da svaki detalj bude pažljivo osmišljen i estetski usklađen.
           </p>
           <p>
-            U kombinaciji sa vašim željama kreiramo nežnu, elegantnu i potpuno personalizovanu dekoraciju koja ostavlja prelep utisak.
+            U kombinaciji sa vašim željama kreiramo nežnu, elegantnu i potpuno personalizovanu dekoraciju
+            koja ostavlja prelep utisak i savršenu uspomenu na ovaj poseban dan.
           </p>
         </div>
       </section>
 
-      {/* SLIKE SEKCIJE */}
-      <img src="/event3.jpeg" className="w-full h-[400px] object-cover" />
+      {/* STAVKE */}
+      <section className="px-6 py-14 md:py-20">
+        <div className="mx-auto grid max-w-5xl gap-16 md:grid-cols-2 xl:grid-cols-3">
+          {dekoracijeStavke.map((item) => (
+            <div key={item} className="text-center">
+              <h3 className="text-[30px] uppercase">{item}</h3>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* SLIKE */}
+      <img src="/rodjendan2.jpeg" className="w-full h-[400px] object-cover" />
       <img src="/rodjendan3.jpeg" className="w-full h-[400px] object-cover" />
 
       {/* CTA */}
@@ -165,6 +179,7 @@ export default function PrviRodjendanPage() {
           Kontaktirajte nas
         </Link>
       </section>
+
     </main>
   );
 }
