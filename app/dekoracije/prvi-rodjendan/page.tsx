@@ -137,7 +137,7 @@ export default function PrviRodjendanPage() {
       <section className="relative">
         <div className="absolute inset-0 bg-black/30" />
         <img
-          src="/Dekoracija10.jpg"
+          src="/dekoracija10.jpg"
           alt="Dekoracije za prvi rođendan"
           className="h-[240px] w-full object-cover md:h-[360px]"
         />
@@ -227,7 +227,7 @@ export default function PrviRodjendanPage() {
       <section className="bg-[#edf1f3]">
         <div className="mx-auto max-w-6xl">
           <img
-            src="/Dekoracija1.jpg"
+            src="/dekoracija1.jpg"
             alt="Dekoracija za prvi rođendan dečaka"
             className="h-[320px] w-full object-cover md:h-[520px]"
           />
@@ -277,7 +277,7 @@ export default function PrviRodjendanPage() {
 
         <div className="mx-auto max-w-6xl">
           <img
-            src="/Event2.jpeg"
+            src="/event2.jpeg"
             alt="Dekoracija za prvi rođendan devojčica"
             className="h-[320px] w-full object-cover md:h-[520px]"
           />
@@ -315,12 +315,12 @@ export default function PrviRodjendanPage() {
 
           <div className="grid gap-6 md:grid-cols-2">
             <img
-              src="/Iznenadjenje2.jpg"
+              src="/iznenadjenje2.jpg"
               alt="Galerija dekoracije 1"
               className="h-[260px] w-full object-cover md:h-[420px]"
             />
             <img
-              src="/Dekoracija3.jpg"
+              src="/dekoracija3.jpg"
               alt="Galerija dekoracije 2"
               className="h-[260px] w-full object-cover md:h-[420px]"
             />
@@ -342,7 +342,7 @@ export default function PrviRodjendanPage() {
           <TitleBlock title="Saveti za dekoraciju prvog rođendana" />
 
           <img
-            src="/Dekoracija3.jpg"
+            src="/dekoracija3.jpg"
             alt="Saveti za dekoraciju prvog rođendana"
             className="mx-auto h-[300px] w-full max-w-4xl object-cover md:h-[520px]"
           />
