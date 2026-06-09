@@ -287,7 +287,6 @@ function VenueSection({
             </div>
 
           </div>
-
           <div className="mt-10 rounded-[18px] bg-[#f8f3ea] p-6 text-center">
             <h4 className="text-xl font-semibold text-[#4c5264]">
               Piće
@@ -300,9 +299,9 @@ function VenueSection({
             </p>
           </div>
         </div>
-        </div>
+      )}
 
-    </section >
+    </section>
   );
 }
 
