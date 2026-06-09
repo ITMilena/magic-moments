@@ -313,7 +313,7 @@ export default function RestoraniSomborPage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-black/35" />
         <img
-          src="/restorani-sombor-hero.jpg"
+          src="/ms3.jpeg"
           alt="Restorani i sale za proslave u Somboru"
           className="h-[320px] w-full object-cover md:h-[520px]"
         />
