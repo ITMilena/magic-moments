@@ -34,19 +34,22 @@ function LocationIcon() {
 
 const venues = [
   {
-    id: "galea",
-    button: "GALEA SALA",
-    title: "GALEA SALA",
+    id: "MASLAČKOVO SOKAČE",
+    button: "MASLAČKOVO SOKAČE",
+    title: "MASLAČKOVO SOKAČE",
     description:
-      "Galea sala je odličan izbor za različite vrste proslava u Somboru. Prostor je pogodan za veće događaje, a može biti praktično rešenje kada vam je važan veći kapacitet i organizacija u svečanoj sali.",
-    price: "Na upit",
-    capacity: "do 350 osoba",
-    location: "Filipa Kljajića bb, Sombor",
+      "Svečana sala Maslačkovo sokače predstavlja prijatan i elegantan prostor za organizaciju rođendana, krštenja, punoletstava, porodičnih okupljanja i drugih svečanih događaja. Uz pažljivo uređenu salu i profesionalnu uslugu, nudimo različite pakete prilagođene potrebama i željama naših gostiju.",
+    price: "Paketi od 8€ do 20€ po osobi",
+    capacity: "",
+    location: "Dvadesetprvog Oktobra 6, Sombor",
     images: [
-      "/galea1.jpg",
-      "/galea2.jpg",
-      "/galea3.jpg",
-      "/galea4.jpg",
+      "ms1.jpeg",
+      "ms2.jpeg",
+      "ms3.jpeeg",
+      "ms4.jpeg",
+      "ms5.jpeg",
+      "ms6.jpeg",
+      "ms7.jpeg",
     ],
   },
   {
