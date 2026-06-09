@@ -216,6 +216,88 @@ function VenueSection({
           </div>
         </div>
       </div>
+      <div className="mt-16 rounded-[24px] border border-[#ece3d0] bg-[#fffdf8] p-8 md:p-12">
+        <h3 className="text-center text-3xl font-light uppercase tracking-[0.05em] text-[#4c5264]">
+          Ponuda i paketi
+        </h3>
+
+        <div className="mt-10 grid gap-8 md:grid-cols-3">
+
+          <div className="rounded-[18px] border border-[#ece3d0] bg-white p-6">
+            <h4 className="text-xl font-semibold text-[#4c5264]">
+              Opcija 1
+            </h4>
+
+            <p className="mt-2 text-lg font-medium text-[#c49b63]">
+              8€ po osobi
+            </p>
+
+            <ul className="mt-4 space-y-2 text-[#6b6f78]">
+              <li>✓ Organizacija događaja</li>
+              <li>✓ Konobarska usluga</li>
+              <li>✓ Postavljena sala</li>
+            </ul>
+          </div>
+
+          <div className="rounded-[18px] border border-[#ece3d0] bg-white p-6">
+            <h4 className="text-xl font-semibold text-[#4c5264]">
+              Opcija 2
+            </h4>
+
+            <p className="mt-2 text-lg font-medium text-[#c49b63]">
+              12€ po osobi
+            </p>
+
+            <ul className="mt-4 space-y-2 text-[#6b6f78]">
+              <li>✓ Hleb</li>
+              <li>✓ Kupus salata</li>
+              <li>✓ Žuta supa ili ragu čorba</li>
+            </ul>
+          </div>
+
+          <div className="rounded-[18px] border border-[#ece3d0] bg-white p-6">
+            <h4 className="text-xl font-semibold text-[#4c5264]">
+              Opcija 3
+            </h4>
+
+            <p className="mt-2 text-lg font-medium text-[#c49b63]">
+              20€ po osobi
+            </p>
+
+            <ul className="mt-4 space-y-2 text-[#6b6f78]">
+              <li>✓ Slano pecivo</li>
+              <li>✓ Hleb</li>
+              <li>✓ Salata</li>
+              <li>✓ Supa ili čorba</li>
+              <li>✓ Pekarski krompir</li>
+              <li>✓ Karađorđeva šnicla</li>
+              <li>✓ Belo pohovano meso</li>
+              <li>✓ Ćevapi</li>
+              <li>✓ Pljeskavice</li>
+              <li>✓ Pileći batak</li>
+              <li>✓ Slanina</li>
+              <li>✓ Kobasica</li>
+            </ul>
+
+            <p className="mt-4 text-sm text-[#6b6f78]">
+              Bez supe ili čorbe: 18€ po osobi
+            </p>
+          </div>
+
+        </div>
+
+        <div className="mt-10 rounded-[18px] bg-[#f8f3ea] p-6 text-center">
+          <h4 className="text-xl font-semibold text-[#4c5264]">
+            Piće
+          </h4>
+
+          <p className="mt-3 text-[#6b6f78] leading-8">
+            Piće se naručuje po dogovoru iz diskonta. Plaća se isključivo
+            popijena količina po diskontnim cenama uz dodatni popust od 5%
+            na ukupnu porudžbinu.
+          </p>
+        </div>
+      </div>
     </section>
   );
 }
