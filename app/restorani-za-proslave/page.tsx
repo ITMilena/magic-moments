@@ -45,11 +45,10 @@ const venues = [
     images: [
       "ms1.jpeg",
       "ms2.jpeg",
-      "ms3.jpeeg",
+      "ms3.jpeg",
       "ms4.jpeg",
       "ms5.jpeg",
       "ms6.jpeg",
-      "ms7.jpeg",
     ],
   },
   {
