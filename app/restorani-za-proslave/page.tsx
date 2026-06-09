@@ -43,12 +43,12 @@ const venues = [
     capacity: "",
     location: "Dvadesetprvog Oktobra 6, Sombor",
     images: [
-      "ms1.jpeg",
-      "ms2.jpeg",
-      "ms3.jpeg",
-      "ms4.jpeg",
-      "ms5.jpeg",
-      "ms6.jpeg",
+      "/ms1.jpeg",
+      "/ms2.jpeg",
+      "/ms3.jpeg",
+      "/ms4.jpeg",
+      "/ms5.jpeg",
+      "/ms6.jpeg",
     ],
   },
   {
@@ -301,8 +301,7 @@ function VenueSection({
           </div>
         </div>
         </div>
-  )
-}
+
     </section >
   );
 }
@@ -313,7 +312,7 @@ export default function RestoraniSomborPage() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-black/35" />
         <img
-          src="ms3.jpeg"
+          src="/ms3.jpeg"
           alt="Restorani i sale za proslave u Somboru"
           className="h-[320px] w-full object-cover md:h-[520px]"
         />
